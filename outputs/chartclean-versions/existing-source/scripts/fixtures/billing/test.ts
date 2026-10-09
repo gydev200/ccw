@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {clinicBilling} from '../../../app/api/clinic-billing/handler';
+import {POST} from '../../../app/api/service-settlement/route';
+import {db,context} from './adapter';
+import {signature,clinicWallet} from '../../../lib/clinic-billing';
+import {emptyWallet,reduceWallet} from '../../../lib/settlement';
+const secret='only-synthetic-billing-test-secret-long-enough';const organizations=JSON.stringify({'org-one':90001,'org-two':90002});const tests:string[]=[];
+async function check(name:string,fn:()=>unknown){await fn();tests.push(name)}
+async function signed(method='GET',body:any=undefined,org='org-one',extra:Record<string,string>={}){const raw=body?JSON.stringify(body):'',ts=String(Date.now()),actor='tester';return new Request('https://works.test/api/clinic-billing',{method,headers:{'x-billing-time':ts,'x-billing-org':org,'x-billing-actor':actor,'x-billing-signature':await signature(secret,[method,ts,org,actor,raw].join('\n')),...extra},body:body?raw:undefined})}
+const call=async(method='GET',body?:any,org?:string)=>clinicBilling(await signed(method,body,org),{secret,organizations});
+const get=async()=> ((await (await call()).json()) as any).wallet;
+const stored=async()=>JSON.parse((await db().prepare('SELECT value FROM settings WHERE key=?').bind('service-settlement:v1:90001').first() as any).value);
+const owner=async(c:any)=>POST(new Request('https://works.test/api/service-settlement',{method:'POST',headers:{origin:'https://works.test'},body:JSON.stringify({hospitalId:90001,requestId:crypto.randomUUID(),...c})}));
+await check('서명 없는 병원 요청 차단',async()=>assert.equal((await clinicBilling(new Request('https://works.test'),{secret,organizations})).status,401));
+await check('미연결 조직 차단',async()=>assert.equal((await call('GET',undefined,'unknown')).status,403));
+await check('만료 서명 차단',async()=>assert.equal((await clinicBilling(await signed('GET',undefined,'org-one',{'x-billing-time':'1000000000000'}),{secret,organizations})).status,401));
+await check('키 미설정은 연결 대기',async()=>assert.equal((await clinicBilling(await signed(),{})).status,503));
+await check('병원별 다른 단가와 잔액 분리',async()=>{const a=await get(),b:any=await(await call('GET',undefined,'org-two')).json();assert.notDeepEqual(a.prices,b.wallet.prices)});
+await check('원가 마진 내부근거 응답 차단',async()=>{const s=JSON.stringify(await get());for(const key of ['"cost"','"margin"','"actor"','"evidence"','"note"','"expense"','"requests"','"costEntries"'])assert.ok(!s.includes(key),key)});
+let before=await get();const req={action:'requestTopup',amount:100000,payer:'합성입금자',version:before.version,requestId:crypto.randomUUID(),hospitalId:90002};
+await check('충전 신청은 잔액을 바꾸지 않음',async()=>{assert.equal((await call('POST',req)).status,200);assert.equal((await get()).balance,before.balance)});
+await check('병원번호 조작은 다른 병원에 반영 안 됨',async()=>assert.equal(((await(await call('GET',undefined,'org-two')).json()) as any).wallet.topups.length,0));
+await check('신청 중복 재전송은 한 건 유지',async()=>{assert.equal((await call('POST',req)).status,200);assert.equal((await get()).topups.length,1)});
+await check('중복번호 금액변조 차단',async()=>assert.equal((await call('POST',{...req,amount:200000})).status,400));
+await check('병원 직접 잔액충전 차단',async()=>assert.equal((await call('POST',{...req,action:'charge'})).status,403));
+await check('병원 가격변경 차단',async()=>assert.equal((await call('POST',{...req,action:'pricing'})).status,403));
+await check('오래된 잔액버전 충전신청 차단',async()=>assert.equal((await call('POST',{...req,requestId:crypto.randomUUID()})).status,400));
+await check('입금과 신청금액 불일치 차단',async()=>assert.equal((await owner({action:'charge',amount:50000,version:(await get()).version,topupId:req.requestId,ref:'proof-wrong',note:'test'})).status,400));
+await check('웍스 입금확인 후 병원잔액 반영',async()=>{assert.equal((await owner({action:'charge',amount:100000,version:(await get()).version,topupId:req.requestId,ref:'proof-1',note:'가상 입금 확인'})).status,200);const a=await get();assert.equal(a.balance,before.balance+100000);assert.equal(a.topups[0].status,'confirmed')});
+await check('같은 신청 두 번 충전 차단',async()=>assert.equal((await owner({action:'charge',amount:100000,version:(await get()).version,topupId:req.requestId,ref:'proof-2',note:'test'})).status,400));
+await check('일반 직원 입금확인 차단',async()=>assert.equal((await context.run('staff',()=>owner({action:'charge',amount:100000,version:0,ref:'x',note:'x'}))).status,403));
+await check('실패 발송은 성공 건만 차감·나머지 해제',async()=>{const b=await get();await owner({action:'reserve',version:b.version,channel:'SMS',count:10,ref:'billing-test-send'});await owner({action:'settle',version:(await get()).version,holdId:'billing-test-send',success:7,actualCost:126,note:'합성 성공7 실패3'});const a=await get();assert.equal(a.balance,b.balance-7*28);assert.equal(a.reserved,b.reserved)});
+await check('잘못된 충전 단위 차단',async()=>assert.equal((await call('POST',{...req,version:(await get()).version,requestId:crypto.randomUUID(),amount:10500})).status,400));
+await check('반려는 잔액 유지하고 병원에 사유 표시',async()=>{const a=await get(),id=crypto.randomUUID();await call('POST',{...req,version:a.version,requestId:id});await owner({action:'rejectTopup',version:(await get()).version,topupId:id,reason:'합성 입금 미확인'});const b=await get();assert.equal(b.balance,a.balance);assert.equal(b.topups.find((t:any)=>t.id===id).reason,'합성 입금 미확인')});
+await check('영속 원장에 충전신청 저장',async()=>assert.equal((await stored()).topups.length,2));
+await check('비용정정도 병원에 숨김',()=>{const w=emptyWallet();w.trades=[{id:'cost1',kind:'expense'},{id:'reverse',kind:'reversal',targetId:'cost1'}] as any;assert.equal(clinicWallet(w).trades.length,0)});
+console.log(JSON.stringify({passed:tests.length,tests},null,2));

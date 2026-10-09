@@ -1,0 +1,382 @@
+[
+  {
+    "slug": "gnyoung",
+    "name": "지앤영피부과의원",
+    "specialty": "피부과",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=gnyoung"
+  },
+  {
+    "slug": "liv",
+    "name": "리브성형외과의원",
+    "specialty": "리프팅·쁘띠",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=liv"
+  },
+  {
+    "slug": "target",
+    "name": "타겟성형외과의원",
+    "specialty": "윤곽·눈·코·바디 성형",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=target"
+  },
+  {
+    "slug": "medici",
+    "name": "메디치의원",
+    "specialty": "피부·미용",
+    "requests": [],
+    "blockers": [
+      "공식 홈페이지는 준비 중이며, 진료별 상세 콘텐츠가 확인되지 않았습니다."
+    ],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=medici"
+  },
+  {
+    "slug": "koiksoo",
+    "name": "고익수성형외과의원",
+    "specialty": "쁘띠·성형·피부 관리",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=koiksoo"
+  },
+  {
+    "slug": "mijak",
+    "name": "미작의원",
+    "specialty": "코성형",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=mijak"
+  },
+  {
+    "slug": "vanny",
+    "name": "반니성형외과의원",
+    "specialty": "눈성형·피부",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=vanny"
+  },
+  {
+    "slug": "thebone",
+    "name": "더본재활의학과의원",
+    "specialty": "통증·재활",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=thebone"
+  },
+  {
+    "slug": "naturalbeauty",
+    "name": "자연예쁨의원",
+    "specialty": "피부·리프팅",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=naturalbeauty"
+  },
+  {
+    "slug": "gmento",
+    "name": "지흡멘토의원",
+    "specialty": "지방흡입·체형",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=gmento"
+  },
+  {
+    "slug": "gonggam",
+    "name": "연세공감마취통증의학과의원 압구정점",
+    "specialty": "통증·재활",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=gonggam"
+  },
+  {
+    "slug": "mobareum",
+    "name": "모바름미작의원",
+    "specialty": "모발이식",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=mobareum"
+  },
+  {
+    "slug": "yonseistandar",
+    "name": "연세스탠다정형외과의원",
+    "specialty": "정형외과·수부",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=yonseistandar"
+  },
+  {
+    "slug": "gemma",
+    "name": "젬마의원",
+    "specialty": "모발이식·모근 관리",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=gemma"
+  },
+  {
+    "slug": "amorata",
+    "name": "아모라타성형외과의원",
+    "specialty": "가슴·체형 성형",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=amorata"
+  },
+  {
+    "slug": "yourclinic",
+    "name": "마음편한유외과의원",
+    "specialty": "유방외과",
+    "requests": [
+      "대표원장 수신 문자 체험",
+      "CTI 소개 요청 — 소개만, 적용 제외"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=yourclinic"
+  },
+  {
+    "slug": "secret",
+    "name": "시크릿성형외과의원",
+    "specialty": "성형외과·피부",
+    "requests": [
+      "대표원장 수신 문자 체험",
+      "CTI 소개 요청 — 소개만, 적용 제외"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=secret"
+  },
+  {
+    "slug": "g7",
+    "name": "지세븐의원",
+    "specialty": "피부·리프팅",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=g7"
+  },
+  {
+    "slug": "songsan",
+    "name": "솜산부인과의원",
+    "specialty": "산부인과·여성검진",
+    "requests": [
+      "이지행정에서 견적·계약 준비 안내 확인"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=songsan"
+  },
+  {
+    "slug": "sinsoe",
+    "name": "신소애여성의원",
+    "specialty": "여성진료·여성성형",
+    "requests": [
+      "병원 맞춤 환자 화면"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=sinsoe"
+  },
+  {
+    "slug": "ode",
+    "name": "오드의원",
+    "specialty": "안티에이징·리프팅",
+    "requests": [
+      "해외환자·다국어 기능 요청 — 준비된 소개만, 적용 제외"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=ode"
+  },
+  {
+    "slug": "faceplus",
+    "name": "페이스플러스성형외과",
+    "specialty": "성형외과·윤곽·리프팅",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=faceplus"
+  },
+  {
+    "slug": "gangnamnb",
+    "name": "강남엔비의원",
+    "specialty": "피부·미용",
+    "requests": [
+      "EMR 수령 뒤 분석 요청 — 이번 합성 시연과 분리"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=gangnamnb"
+  },
+  {
+    "slug": "olina",
+    "name": "올리나의원",
+    "specialty": "피부·쁘띠",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=olina"
+  },
+  {
+    "slug": "thebeauty",
+    "name": "더뷰티성형외과의원",
+    "specialty": "성형외과·리프팅",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=thebeauty"
+  },
+  {
+    "slug": "bonita",
+    "name": "보니따의원",
+    "specialty": "피부·리프팅",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=bonita"
+  },
+  {
+    "slug": "doctortop",
+    "name": "닥터탑성형외과의원",
+    "specialty": "성형외과",
+    "requests": [],
+    "blockers": [
+      "정확한 병원 소재지·공식 채널 확인이 필요합니다. 기존 대구 타 병원 링크는 제거했습니다."
+    ],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=doctortop"
+  },
+  {
+    "slug": "highly",
+    "name": "하일리의원",
+    "specialty": "피부·쁘띠",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=highly"
+  },
+  {
+    "slug": "eonjupyeonan",
+    "name": "언주편안한마취통증의학과의원",
+    "specialty": "통증·재활",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=eonjupyeonan"
+  },
+  {
+    "slug": "remakegangnam",
+    "name": "리메이크강남의원",
+    "specialty": "여성진료·재생",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=remakegangnam"
+  },
+  {
+    "slug": "idclinic",
+    "name": "아이디의원 강남점",
+    "specialty": "피부·리프팅",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=idclinic"
+  },
+  {
+    "slug": "bethesda",
+    "name": "베데스다정형외과",
+    "specialty": "정형외과",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=bethesda"
+  },
+  {
+    "slug": "yonseigood",
+    "name": "연세굿초이스정형외과의원",
+    "specialty": "정형외과",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=yonseigood"
+  },
+  {
+    "slug": "hwalseon",
+    "name": "활선재활의학과의원",
+    "specialty": "재활의학과",
+    "requests": [],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=hwalseon"
+  },
+  {
+    "slug": "smileview",
+    "name": "스마일뷰치과의원",
+    "specialty": "치과",
+    "requests": [
+      "개인정보 보호·처리위탁 검토 안내"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=smileview"
+  },
+  {
+    "slug": "inee",
+    "name": "아이니의원",
+    "specialty": "피부·미용 진료",
+    "requests": [
+      "해외환자·AI 채팅 요청은 준비 현황 소개만 제공"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=inee"
+  },
+  {
+    "slug": "abloom",
+    "name": "에이블룸성형외과의원",
+    "specialty": "성형외과",
+    "requests": [
+      "원장·실장이 직접 환자 수신 화면과 반응 관리 체험"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=abloom"
+  },
+  {
+    "slug": "chiu",
+    "name": "치유성형외과의원",
+    "specialty": "성형외과",
+    "requests": [
+      "원장 미팅용 상담 당일 문자 예시"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=chiu"
+  },
+  {
+    "slug": "miracle",
+    "name": "압구정미라클의원",
+    "specialty": "피부·미용 진료",
+    "requests": [
+      "원장 미팅용 상담 당일 문자와 실제 수신 흐름 체험"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=miracle"
+  },
+  {
+    "slug": "reorb",
+    "name": "리오브피부과의원",
+    "specialty": "피부과",
+    "requests": [
+      "원장·실장 상담 당일 문자 체험"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=reorb"
+  },
+  {
+    "slug": "seoulgosu",
+    "name": "서울고수정형외과의원",
+    "specialty": "정형외과",
+    "requests": [
+      "현황판의 원장 미팅에 맞춘 장기 미내원 수신 화면과 이지행정"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=seoulgosu"
+  },
+  {
+    "slug": "nbps",
+    "name": "엔비성형외과의원",
+    "specialty": "성형외과",
+    "requests": [
+      "원장 미팅용 상담 당일 문자 예시"
+    ],
+    "blockers": [],
+    "url": "https://chartclean-b2.happyshs747.chatgpt.site/chaenggyeo/s3?clinic=nbps"
+  }
+]

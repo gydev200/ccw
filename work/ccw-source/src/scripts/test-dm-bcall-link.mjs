@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import {validateOutreach,callEvidence,visitedDelivery,hospitalInterests} from '../lib/outreach.ts';
+const issue={id:1,kind:'issue',version:2,data:{title:'검증용 회차'}};
+const visit=(status,hospitalId='h1',issueId=1)=>({id:2,kind:'delivery',version:1,updated_at:'2026-09-22T01:00:00Z',data:{hospitalId,issueId,status,interests:'재진 안내',recipient:'접수 담당'}});
+const raw={hospitalId:'h1',issueId:1,journey:'B',reaction:'상담 일정 요청',outcome:'관심',usedCopy:'검증 카피',bStep:'일반 연락',interests:'예약 누락 관리',receiptStatus:'수령 확인',nextAction:'맞춤 설명',nextDate:'2026-09-23'};
+const call=validateOutreach('call',raw);assert.equal(call.interests,raw.interests);assert.equal(call.receiptStatus,'수령 확인');
+assert.throws(()=>callEvidence(call,[issue]),/방문/);
+assert.throws(()=>callEvidence(call,[issue,visit('예정')]),/방문/);
+assert.throws(()=>callEvidence(call,[issue,visit('전달','other')]),/방문/);
+assert.throws(()=>callEvidence(call,[issue,visit('전달','h1',9)]),/방문/);
+for(const status of ['도착','전달','미전달','재방문']){const evidence=callEvidence(call,[issue,visit(status)]);assert.equal(evidence.deliveryId,2);assert.equal(evidence.deliverySnapshot.status,status);assert.equal(evidence.deliverySnapshot.interests,'재진 안내');}
+assert.equal(visitedDelivery([visit('예정')],'h1',1),undefined);
+const updated={id:3,kind:'call',updated_at:'2026-09-22T02:00:00Z',data:call};
+assert.equal(hospitalInterests([visit('전달'),updated],'h1').data.interests,'예약 누락 관리');
+assert.equal(hospitalInterests([updated,{...updated,id:4,updated_at:'2026-09-22T03:00:00Z',data:{...call,interests:''}}],'h1').id,3);
+const a=validateOutreach('call',{...raw,journey:'A',issueId:0,trialId:8,bStep:'분석 결과 설명',reference:'검증 근거'});
+assert.equal(callEvidence(a,[{id:8,kind:'trial',version:1,data:{hospitalId:'h1',status:'준비'}}]).trialVersion,1);
+assert.throws(()=>validateOutreach('call',{...raw,receiptStatus:'허위 상태'}),/수령/);
+assert.equal(validateOutreach('delivery',{...visit('도착').data}).interests,'재진 안내');
+console.log('PASS: DM visit evidence, issue/hospital separation, delivery snapshot, interests persistence, A follow-up preservation');

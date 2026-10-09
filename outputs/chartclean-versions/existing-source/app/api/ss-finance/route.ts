@@ -1,0 +1,3 @@
+import {env} from '@/lib/runtime';
+import {member,owner,json,fail,HttpError} from '@/lib/server';
+export async function GET(req:Request){try{owner(await member());const month=new URL(req.url).searchParams.get('month')||new Date(Date.now()+9*3600000).toISOString().slice(0,7);if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(month))throw new HttpError(400,'조회 월 확인 필요');if(!env.SS_DISPATCH_TOKEN)throw new HttpError(503,'발송 서버 연결 정보가 없습니다.');const r=await fetch('https://app-chenggyo.vercel.app/api/chaenggyeo/send/finance?month='+month,{headers:{Authorization:'Bearer '+env.SS_DISPATCH_TOKEN},signal:AbortSignal.timeout(45000),cache:'no-store'});const data:any=await r.json();if(!r.ok)throw new HttpError(502,data.error||'솔라피 조회 실패');return json(data);}catch(e){return fail(e)}}

@@ -1,0 +1,10 @@
+scripts/export-and-import.ts
+scripts/migrate-existing-storage.ts
+scripts/verify-production.ts
+*.tsbuildinfo
+
+.env.local
+.env.production
+.env.development
+node_modules/
+.next/

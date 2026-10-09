@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'fm-routines-'));
+for(const file of ['ccfm','fm-routines'])require('esbuild').buildSync({entryPoints:['lib/'+file+'.ts'],bundle:true,platform:'node',format:'cjs',outfile:path.join(dir,file+'.cjs')});
+const {reduceFinance,emptyFinance}=require(path.join(dir,'ccfm.cjs')),{routinePeriod,routineTemplates,routineCoverage}=require(path.join(dir,'fm-routines.cjs'));
+const actor={id:'qa',person:'do',role:'DO',active:1};let f=emptyFinance();let seq=0;
+function create(cycle,date='2026-09-24'){const c={action:'ensureRoutines',cycle,date,due:'2026-09-30',person:'do',version:f.version,requestId:'qa-'+(++seq)};f=reduceFinance(f,c,actor,[],['do'],['DSS'],'2026-09-30T00:00:00Z');return c}
+const c=create('daily');assert.equal(f.work.length,9);assert.equal(reduceFinance(f,c,actor,[],['do'],['DSS']),f);
+create('daily');assert.equal(f.work.length,9);create('daily','2026-09-25');assert.equal(f.work.length,18);assert.equal(f.work.filter(w=>w.status==='대기').length,18);
+assert.equal(routinePeriod('weekly','2027-01-03'),'2026-12-28');assert.equal(routinePeriod('weekly','2027-01-04'),'2027-01-04');
+assert.equal(routinePeriod('quarterly','2026-03-31'),'2026-Q1');assert.equal(routinePeriod('quarterly','2026-04-01'),'2026-Q2');assert.equal(routinePeriod('halfyear','2026-07-01'),'2026-H2');
+assert.throws(()=>routinePeriod('monthly','2026-02-30'));assert.throws(()=>routinePeriod('bad','2026-09-24'));
+for(const cycle of ['weekly','monthly','quarterly','halfyear','yearly','threeYear'])create(cycle);
+assert.equal(f.work.length,49);assert(f.work.every(w=>w.evidence.includes('법정 신고·납부일이 아닙니다')));assert.equal(f.journals.length,0);
+assert.throws(()=>reduceFinance(f,{action:'ensureRoutines',cycle:'daily',date:'2026-09-26',due:'2026-09-30',person:'nobody',version:f.version,requestId:'bad-owner'},actor,[],['do'],['DSS']));
+const empty=routineCoverage([],'2026-09-24');assert.equal(empty.reduce((n,c)=>n+c.missing,0),40);
+let coverage=routineCoverage(f.work,'2026-09-24');assert.equal(coverage.reduce((n,c)=>n+c.missing,0),0);assert.equal(coverage[0].open,9);
+const day=routineTemplates('daily','2026-09-24');const testWork=[{routineKey:day[0].key,status:'완료',due:'2026-09-01'},{routineKey:day[1].key,status:'취소',due:'2026-09-01'},{routineKey:day[2].key,status:'보류',due:'2026-09-23'},{routineKey:day[3].key,status:'진행',due:'2026-09-24'}];
+coverage=routineCoverage(testWork,'2026-09-24');assert.equal(coverage[0].completed,1);assert.equal(coverage[0].cancelled,1);assert.equal(coverage[0].open,2);assert.equal(coverage[0].missing,5);assert.equal(coverage[0].overdue,1);
+assert.equal(routineCoverage(testWork,'2026-09-25')[0].missing,9);assert.equal(routineCoverage(f.work,'2026-10-01')[2].missing,10);
+console.log('등록 누락·완료·보류·취소 구분·내부 기한 초과·다음 기간 초기화 검사 통과');
+console.log('주기40개·기간 중복 방지·미완료 보존·주/분기/반기 경계·잘못된 날짜/담당 차단 통과');
+fs.rmSync(dir,{recursive:true,force:true});

@@ -1,0 +1,16 @@
+'use client';
+import {useState} from 'react';
+const defaults=[
+ ['기존 장기미내원 EMR과 연락처를 확인하고, 수신거부·최근 예약·내원 변경을 가능한 범위에서 전달합니다.','기발송·제외 대조 → 주간 분배 → 1:1 LMS·3-1·3-2 제작 → 전수·독립 검수 → 승인 후 발송을 준비합니다.','오늘 회차 결과를 확인하고 내일 대상부터 미리 편성합니다. 부족한 인원과 필요한 추가 자료를 구분합니다.'],
+ ['예약일시·진료/시술 항목·담당자·변경/취소 여부, 병원별 예약 주의사항을 제공합니다.','예약 전 맞춤 안내 3회의 시점과 문구를 정하고, 예약 변경·취소 시 기존 발송을 중단/수정하도록 연결합니다.','예약 샘플로 3회 안내와 변경·취소를 시험한 뒤, 매일 예약 자료를 받는 경로를 확정합니다.'],
+ ['진료 완료일·실제 시행 항목·의료진 관리지침·다음 내원 계획을 제공합니다.','진료별 사후관리 콘텐츠와 상태 확인 질문을 연결하고, 답변 접수·의료진 전달·다음 예약 요청 흐름을 준비합니다.','대표 진료 유형부터 화면과 안내 시점을 시험합니다. 이상 증상은 AI가 진단하지 않고 병원에 연결합니다.'],
+ ['당일 상담 내용·고민·제안 항목·견적 조건·미결정 이유와 상담 담당자를 제공합니다.','상담 요약과 병원별 설명 자료를 만들고, 당일 맞춤 안내 및 추가 질문 접수를 연결합니다.','상담 사례로 요약 누락·가격/조건 오류를 확인하고 병원 담당자 응답 절차를 시험합니다.'],
+ ['수탁검사의 결과 도착/확정 여부·병원 확인 여부·추가 상담/예약 필요 여부를 제공합니다.','결과 도착 알림과 예약 확인을 묶고, 확인되지 않은 결과나 해석을 문자에 넣지 않도록 준비합니다.','결과 확정·정정·중복 알림 상황을 시험하고, 환자 질문을 병원으로 연결합니다.'],
+ ['사용 중인 전화 시스템·전화번호·수신/발신 흐름을 확인합니다.','통화 기록을 공통 접수와 연결할 방법, 담당 배정·응답 이력 범위를 설계합니다.','구상 중 · 현재 제공되지 않습니다. 연동 가능 여부와 시험 범위를 먼저 결정합니다.'],
+ ['사용 언어·외국인 환자 문의 경로·병원 답변 담당자를 확인합니다.','원문과 번역을 함께 보존하고, 질문 수신·답변 작성·환자 전달 흐름을 설계합니다.','구상 중 · 현재 제공되지 않습니다. 의료 내용의 의미 변형과 재확인 절차부터 시험합니다.']
+];
+export default function ServiceNextSteps({hospital,index,service,model,onSave,editable}:any){
+ const existing=model.servicePlans?.[service],base=existing||{hospitalNeed:defaults[index][0],ourWork:defaults[index][1],next:defaults[index][2],assignee:'',collaborator:'',due:''};const [draft,setDraft]=useState<any>(null),[busy,setBusy]=useState(false),[error,setError]=useState(''),[saved,setSaved]=useState(false);const v=draft||base;
+ async function save(){setBusy(true);try{const data={...model,servicePlans:{...model.servicePlans,[service]:draft}};const result=await onSave(hospital.record?{action:'reviewService',id:hospital.record.id,version:hospital.record.version,data}:{action:'create',kind:'customer',data:{...hospital.data,serviceReview:data}});if(!result)throw Error('저장하지 못했습니다.');setDraft(null);setSaved(true)}catch(e:any){setError(e.message)}finally{setBusy(false)}}
+ return <section className="service-next" aria-label="서비스별 앞으로 할 일"><div className="section-heading"><div><h3>{hospital.data.name} · 이 서비스에서 할 일</h3><small>{existing?'저장된 준비 계획':'서비스 기준으로 제안한 준비 계획 · 실행 완료 기록 아님'}</small></div>{editable&&!draft&&<button onClick={()=>{setDraft({...base});setSaved(false)}}>준비 사항·아이디어 수정</button>}</div><div className="service-next-grid">{[['hospitalNeed','병원에서 받아야 할 것'],['ourWork','우리가 준비할 것'],['next','다음에 할 일']].map(([key,label])=><div key={key}><h4>{label}</h4>{draft?<textarea aria-label={label} maxLength={2000} value={v[key]} onChange={e=>setDraft({...draft,[key]:e.target.value})}/>:<p>{v[key]}</p>}</div>)}</div><div className="service-next-meta">{[['assignee','담당'],['collaborator','협조'],['due','기한']].map(([key,label])=><label key={key}>{label}{draft?<input aria-label={label} type={key==='due'?'date':'text'} maxLength={100} value={v[key]} onChange={e=>setDraft({...draft,[key]:e.target.value})}/>:<b>{v[key]||'미정'}</b>}</label>)}</div>{draft&&<div className="actions"><button disabled={busy} onClick={()=>void save()}>준비 계획 저장</button><button onClick={()=>setDraft(null)}>취소</button></div>}{saved&&<p role="status">이 병원의 서비스 준비 계획에 저장했습니다.</p>}{error&&<p role="alert">{error}</p>}</section>
+}

@@ -1,0 +1,69 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1788794995303,
+      "tag": "0000_dapper_fixer",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1788796380852,
+      "tag": "0001_eminent_the_professor",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788797379385,
+      "tag": "0002_right_mother_askani",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1789382973801,
+      "tag": "0003_powerful_domino",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1789454800000,
+      "tag": "0004_suhyun_first_round",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1789463146101,
+      "tag": "0005_preserve_exam_answers",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790762400000,
+      "tag": "0006_ss_remote_test_clinic",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1791180000000,
+      "tag": "0007_ss_setup_directory",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1791251261022,
+      "tag": "0008_ss_pw_reference",
+      "breakpoints": true
+    }
+  ]
+}

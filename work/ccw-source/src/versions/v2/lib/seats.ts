@@ -1,0 +1,7 @@
+import {assertOrg,assertText,mayAssign,mayOrg} from './policy';
+import type {Member} from './model';
+export function seatDay(value:unknown){const s=String(value||'');if(!/^\d{4}-\d{2}-\d{2}$/.test(s)||!Number.isFinite(Date.parse(s))||new Date(s).toISOString().slice(0,10)!==s)throw Error('올바른 날짜를 입력해 주세요.');return s}
+export function newSeat(d:any){return {org:assertOrg(d.org),assignee:'do',title:assertText(d.title,'자리 이름',200,true),purpose:assertText(d.purpose,'실무 범위',5000,true),criterion:assertText(d.criterion,'완료 기준',5000,true),appointments:[],taskIds:[],handover:[]}}
+export function appointed(d:any,person:string,day:string){return (d.appointments||[]).some((a:any)=>a.person===person&&a.start<=day&&a.end>=day)}
+export function canReadSeat(m:Member,d:any,day:string){return mayOrg(m,d.org)&&(m.role==='DO'||appointed(d,m.person,day))}
+export function addAppointment(d:any,b:any){const person=String(b.person),start=seatDay(b.start),end=seatDay(b.end);if(!mayAssign(d.org,person)||!['do','kyunghwa','parttime','ai','vendor'].includes(person))throw Error('이 조직에 배정할 수 없는 수행자입니다.');if(start>end)throw Error('종료일은 시작일 이후여야 합니다.');if(!['주요보직','겸직','단계적 배정'].includes(b.position))throw Error('보직 구분을 선택해 주세요.');if((d.appointments||[]).some((a:any)=>a.person===person&&a.start<=end&&a.end>=start))throw Error('같은 자리·수행자의 배정 기간이 겹칩니다.');return {...d,appointments:[...(d.appointments||[]),{id:crypto.randomUUID(),person,start,end,position:b.position,note:assertText(b.note||'','배정 사유',2000)}]}}

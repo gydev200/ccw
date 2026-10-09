@@ -1,0 +1,4 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>챙겨 원격 설치</title><style>body{font-family:system-ui;margin:60px auto;max-width:640px;padding:24px;color:#202020}p{line-height:1.7}</style></head><body><h1>원격 설치 페이지를 여는 중입니다</h1><p id="status" role="status">병원 설치 링크를 확인하고 있습니다.</p><script>
+const token=new URLSearchParams(location.search).get('token')||'';
+(async()=>{try{if(!/^[a-f0-9]{64}$/.test(token))throw Error('설치 링크를 확인해 주세요.');const r=await fetch('/api/setup-journey?token='+token,{cache:'no-store'});const d=await r.json();if(!r.ok)throw Error(d.error||'설치 링크를 열지 못했습니다.');if(!/^\/setup\?token=[a-f0-9]{64}$/.test(d.remoteUrl))throw Error('설치 링크를 확인해 주세요.');location.replace(d.remoteUrl)}catch(e){document.querySelector('h1').textContent='설치 링크를 확인해 주세요.';document.getElementById('status').textContent=e.message}})();
+</script></body></html>

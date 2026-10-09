@@ -1,0 +1,11 @@
+// Hospital operating reports are separate from patient messaging and EMR ingestion.
+export const SERVICE_DATA_NEEDS=[
+ ['진료 후 케어','진료별 최신 자료','진료 완료일·시술/진료 항목·병원이 확인한 주의사항·다음 예약','병원이 확인한 진료 완료 목록과 안내 기준으로 시작 가능'],
+ ['예약 맞춤 안내','최신 예약 자료','예약 일시·항목·변경/취소·연락 가능 여부','예약표로 시작 가능. 발송 직전 변경·취소 대조 필요'],
+ ['검사 결과 알림','검사 완료 상태','결과 도착·병원 확인 여부·안내 대상·후속 예약','병원이 확인한 완료 목록으로 시작 가능. 결과 해석은 병원 담당'],
+ ['상담 후 안내','상담별 기록','상담 내용·병원이 확인한 요약·다음 행동·연락 가능 여부','상담 기록을 직접 받아 시작 가능. 추측으로 상담 내용 작성 금지'],
+ ['장기미내원 관리','과거 이력 + 최신 변동','최종 내원·과거 진료/시술·연락 이력·현재 예약·수신거부','충분한 과거 이력으로 대상 분류 후 최신 예약·내원·거부를 대조'],
+] as const;
+export function blankReporting(){return {startDate:'',firstDays:7,firstInterval:2,secondDays:7,secondInterval:3,steadyInterval:7,recipient:'병원 지정 담당자',channel:'병원 대시보드 + 메시지 요약',paused:false};}
+export function validateReporting(raw:any){if(raw==null)return blankReporting();if(typeof raw!=='object'||Array.isArray(raw))throw Error('병원 보고 설정을 확인해 주세요.');const out={...blankReporting(),...raw};if(typeof out.startDate!=='string'||(out.startDate&&(!/^\d{4}-\d{2}-\d{2}$/.test(out.startDate)||!Number.isFinite(Date.parse(out.startDate))||new Date(out.startDate).toISOString().slice(0,10)!==out.startDate)))throw Error('보고 시작일을 확인해 주세요.');for(const k of ['firstDays','secondDays','firstInterval','secondInterval','steadyInterval'] as const)if(!Number.isInteger(out[k])||out[k]<1||out[k]>90)throw Error('보고 기간·간격은 1~90일로 입력해 주세요.');for(const k of ['recipient','channel'] as const)if(typeof out[k]!=='string'||out[k].length>200)throw Error('보고 대상·채널은 200자 이하로 입력해 주세요.');if(typeof out.paused!=='boolean')throw Error('보고 중지 상태를 확인해 주세요.');return {startDate:out.startDate,firstDays:out.firstDays,firstInterval:out.firstInterval,secondDays:out.secondDays,secondInterval:out.secondInterval,steadyInterval:out.steadyInterval,recipient:out.recipient,channel:out.channel,paused:out.paused};}
+export function reportingDates(raw:any,days=35){const p=validateReporting(raw);if(!p.startDate||p.paused)return [];const first=Date.parse(p.startDate+'T00:00:00Z');const dates:string[]=[];let last=-1000;for(let day=0;day<days;day++){const interval=day<p.firstDays?p.firstInterval:day<p.firstDays+p.secondDays?p.secondInterval:p.steadyInterval;if(day===0||day-last>=interval){dates.push(new Date(first+day*86400000).toISOString().slice(0,10));last=day;}}return dates;}

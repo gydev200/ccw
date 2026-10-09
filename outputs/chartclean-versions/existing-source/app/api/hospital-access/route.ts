@@ -1,0 +1,10 @@
+import {env} from '@/lib/runtime';
+import {db,member,owner,origin,json,fail,HttpError} from '@/lib/server';
+import {hospitalAccount,ticketKey,encryptPassword,decryptPassword} from '@/lib/hospital-access';
+const endpoint='https://app-chenggyo.vercel.app/api/auth/works-hospital';
+export async function GET(req:Request){try{owner(await member());const h=hospitalAccount(new URL(req.url).searchParams.get('hospital'));const row=await db().prepare('SELECT value FROM settings WHERE key=?').bind('hospital-password:'+h.slug).first<{value:string}>();return json({email:h.email,password:row?await decryptPassword(row.value):null});}catch(e){return fail(e)}}
+export async function POST(req:Request){try{origin(req);const m=await member();owner(m);if(!env.SS_DISPATCH_TOKEN)throw new HttpError(503,'병원 인증 연결 설정을 확인해 주세요.');
+if(req.headers.get('content-type')?.includes('application/json')){const b:any=await req.json();const h=hospitalAccount(b.hospital);if(typeof b.password!=='string'||b.password.length<1||b.password.length>256)throw new HttpError(400,'현재 병원 관리자 비밀번호를 입력해 주세요.');const verify=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+env.SS_DISPATCH_TOKEN},body:JSON.stringify({action:'verify-password',hospital:h.slug,password:b.password}),signal:AbortSignal.timeout(15000)});if(!verify.ok)throw new HttpError(400,'병원 계정과 비밀번호가 일치하는지 확인해 주세요.');await db().prepare('INSERT INTO settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').bind('hospital-password:'+h.slug,await encryptPassword(b.password)).run();return json({saved:true});}
+const form=await req.formData();const h=hospitalAccount(form.get('hospital'));const ticket=Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toString(16).padStart(2,'0')).join('');await db().prepare('INSERT INTO settings(key,value) VALUES(?,?)').bind(await ticketKey(ticket),JSON.stringify({hospital:h.slug,actor:m.id,expiresAt:Date.now()+60000})).run();
+return new Response(null,{status:303,headers:{Location:endpoint+'?code='+ticket,'Cache-Control':'no-store','Referrer-Policy':'no-referrer'}});
+}catch(e){return fail(e)}}

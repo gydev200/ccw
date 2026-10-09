@@ -1,0 +1,2 @@
+import {member,owner,fail,HttpError} from '@/lib/server';import catalog from '@/lib/ss-content-catalog.json';
+export async function GET(req:Request){try{owner(await member());const h=new URL(req.url).searchParams.get('hospital')||'';if(!Object.hasOwn(catalog,h))throw new HttpError(404,'이 병원은 항목 자료 미등록입니다.');return Response.json(catalog[h as keyof typeof catalog],{headers:{'Cache-Control':'private, no-store'}})}catch(e){return fail(e)}}

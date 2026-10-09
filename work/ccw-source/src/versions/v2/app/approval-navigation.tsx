@@ -1,0 +1,7 @@
+ 'use client';
+import {FileText,Clock,CheckCircle2,X,History,Plus,UserRound,Settings} from 'lucide-react';
+export type ApprovalView='all'|'draft'|'pending'|'approved'|'cancelled'|'history'|'compose'|'inbox'|'processed';
+export default function ApprovalNavigation({active,onSelect,name,onSettings,switcher,embedded=false}:{active?:ApprovalView;onSelect:(view:ApprovalView)=>void;name:string;onSettings:()=>void;switcher?:React.ReactNode;embedded?:boolean}){
+ const own=[['all','내 결재',FileText],['draft','임시저장',FileText],['pending','진행 중',Clock],['approved','승인 완료',CheckCircle2],['cancelled','거절·회수',X],['history','기록',History]] as const;
+ return <div className="approval-side"><button className="approval-new" onClick={()=>onSelect('compose')}><Plus size={17}/>새 결재 작성</button><div className="approval-side-group"><h2>내 문서함</h2>{own.map(([id,label,Icon])=><button key={id} aria-current={active===id?'page':undefined} onClick={()=>onSelect(id)}><Icon size={17}/><span>{label}</span></button>)}</div><div className="approval-side-group"><h2>이사님 문서함</h2><button aria-current={active==='inbox'?'page':undefined} onClick={()=>onSelect('inbox')}><Clock size={17}/>승인 대기</button><button aria-current={active==='processed'?'page':undefined} onClick={()=>onSelect('processed')}><FileText size={17}/>처리한 결재</button></div>{!embedded&&<div className="approval-side-footer"><div><UserRound size={20}/><strong>{name}</strong><button onClick={onSettings} aria-label="계정 설정"><Settings size={17}/></button></div>{switcher}</div>}</div>;
+}

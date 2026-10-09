@@ -1,0 +1,43 @@
+차트클린 웍스 버전 운영 기준
+기록일: 2026-10-09 KST
+
+기존 버전은 현재 erp.chartclean.com에 연결된 Vercel 배포
+dpl_7ADQQ7PdoWtooSsSnA5pZv7J9MJg를 뜻한다.
+오래된 chartclean-erp-v1.chatgpt.site의 Sites 배포를 뜻하지 않는다.
+
+앞으로 진행하는 개편은 버전 2로 기록한다.
+기존 버전의 배포 식별자는 변경하거나 다른 배포로 덮어쓰지 않는다.
+기존 버전의 Vercel 배포를 삭제하지 않는다.
+
+버전 2 운영 배포 전:
+1. 현재 Vercel 배포의 전체 소스를 내려받아 별도 Git 기준점과 ZIP으로 보관한다.
+2. 버전 2를 별도 브랜치 또는 작업 사본에서 수정한다.
+3. 신규 데이터 필드는 추가 방식으로 도입한다. 기존 필드·API는 유지한다.
+4. 기존 버전과 버전 2 모두 현재 병원·진행 이력을 읽을 수 있는지 확인한다.
+5. 미리보기 검수 후 배포하고, Ready 상태와 실제 운영 도메인의 연결을 확인한다.
+6. 확인된 버전 2의 배포 ID와 URL을 versions.json에 등록한다.
+
+"기존 버전으로 가"라는 요청:
+versions.json의 existing에 등록된 정확한 배포로 Vercel Instant Rollback한다.
+다른 과거 배포를 임의로 선택하지 않는다.
+운영 도메인의 배포 연결, 로그인, SS 화면을 확인한 후 완료를 보고한다.
+화면·서버 코드만 복원하며 최신 병원 업무 기록은 유지한다.
+과거 시점의 업무 데이터 복원은 별도 명시 요청 없이는 실행하지 않는다.
+
+PowerShell 확인:
+./restore-version.ps1 -Version existing
+실제 복원(Vercel CLI 로그인 필요):
+./restore-version.ps1 -Version existing -Apply
+
+현재 검증 범위:
+Vercel 관리 화면에서 Ready, Production, Current Domains를 확인했다.
+배포 ID·URL·소스 페이지와 복원 스크립트 확인 모드를 보관했다.
+실제 복원은 운영판을 바꾸므로 실행하지 않았다.
+Vercel CLI 인증 완료. 운영 소스 457개 파일을 복원하여 SHA256 대조를 완료했다.
+existing-source.zip과 existing-source Git의 existing-production 태그로 보관했다.
+ccw32 · 고경화 계정 연결을 운영 화면에서 확인했다.
+버전 2는 별도 화면 복사본으로 배포했으며 DO 기본 화면은 기존 구성을 유지한다.
+앞으로 고경화 화면 수정 → 사용자 검수·승인 → DO 반영 순서로 진행한다.
+
+공식 복원 문서:
+https://vercel.com/docs/cli/rollback

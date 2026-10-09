@@ -1,0 +1,5 @@
+import {env} from '@/lib/runtime';
+import {db,json,fail,HttpError} from '@/lib/server';
+import {isPreparationWorker} from '@/lib/ss-preparation-worker';
+import {hospitalAccount,ticketKey} from '@/lib/hospital-access';
+export async function POST(req:Request){try{if(!await isPreparationWorker(req,env.SS_DISPATCH_TOKEN))throw new HttpError(403,'인증 실패');const b:any=await req.json();if(typeof b.ticket!=='string'||!/^[a-f0-9]{64}$/.test(b.ticket))throw new HttpError(400,'잘못된 연결입니다.');const row=await db().prepare('DELETE FROM settings WHERE key=? RETURNING value').bind(await ticketKey(b.ticket)).first<{value:string}>();if(!row)throw new HttpError(401,'연결이 만료됐습니다. 워크스에서 다시 열어 주세요.');const data=JSON.parse(row.value);if(!Number.isFinite(data.expiresAt)||data.expiresAt<Date.now())throw new HttpError(401,'연결이 만료됐습니다.');const actor=await db().prepare('SELECT id FROM members WHERE id=? AND active=1 AND role=?').bind(data.actor,'DO').first();if(!actor)throw new HttpError(403,'접근 권한이 없습니다.');const h=hospitalAccount(data.hospital);return json({hospital:h.slug,email:h.email});}catch(e){return fail(e)}}

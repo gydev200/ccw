@@ -1,0 +1,61 @@
+{
+  "project": "chartclean-erp",
+  "team": "happyshs747-3030s-projects",
+  "productionUrl": "https://erp.chartclean.com",
+  "currentVersion": "existing-with-v2-preview",
+  "versions": {
+    "existing": {
+      "label": "기존 버전",
+      "aliases": [
+        "기존 버전",
+        "버전 1",
+        "v1"
+      ],
+      "capturedDateKst": "2026-10-09",
+      "deploymentId": "dpl_7ADQQ7PdoWtooSsSnA5pZv7J9MJg",
+      "deploymentUrl": "https://chartclean-j6tuqprw0-happyshs747-3030s-projects.vercel.app",
+      "dashboardUrl": "https://vercel.com/happyshs747-3030s-projects/chartclean-erp/7ADQQ7PdoWtooSsSnA5pZv7J9MJg",
+      "sourceUrl": "https://vercel.com/happyshs747-3030s-projects/chartclean-erp/7ADQQ7PdoWtooSsSnA5pZv7J9MJg/source",
+      "statusAtCapture": "Ready, Current Production",
+      "sourceBackup": "existing-source.zip (457 files, SHA256 verified)",
+      "rollbackExecutionTest": "not-run"
+    },
+    "v2": {
+      "label": "버전 2",
+      "aliases": [
+        "버전 2",
+        "v2"
+      ],
+      "status": "deployed-preview",
+      "deploymentId": "dpl_23wbXsszyP4SnaayMAMfpufGyj78",
+      "deploymentUrl": "https://chartclean-klcn9ghgv-happyshs747-3030s-projects.vercel.app",
+      "basedOn": "existing",
+      "dashboardUrl": "https://vercel.com/happyshs747-3030s-projects/chartclean-erp/23wbXsszyP4SnaayMAMfpufGyj78",
+      "previewPath": "/v2",
+      "previewAccount": "ccw32",
+      "previewPerson": "kyunghwa",
+      "accountConnectionVerified": true,
+      "readOnly": false,
+      "doFrontend": "existing",
+      "promotionRequiresUserApproval": true,
+      "businessDataReadOnly": true,
+      "staffAccountRequestsEnabled": true,
+      "accountManagementPath": "/v2/accounts",
+      "temporaryRoleSwitch": "display-only; approvals use actual login role",
+      "dailyPlanPath": "/v2",
+      "dailyPlanPreviewPath": "/v2#personal/daily-plan",
+      "dailyPlanEditRole": "actual-DO-only",
+      "theme": "white-gray-navy",
+      "dailyPlanLanding": "ccw32-staff-only"
+    }
+  },
+  "policy": {
+    "keepExistingDeployment": true,
+    "replaceExistingBaseline": false,
+    "preserveLatestBusinessDataOnRollback": true,
+    "requireBackwardCompatibleDataChanges": true,
+    "requireSourceBackupBeforeV2Production": true,
+    "requireVerifiedV2DeploymentBeforeRegistration": true,
+    "requireProductionAliasCheckAfterRollback": true
+  }
+}

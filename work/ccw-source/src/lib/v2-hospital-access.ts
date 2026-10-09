@@ -1,0 +1,3 @@
+import {db,member,HttpError} from './server';
+export async function hospitalEditor(){const m=await member(true);if(m.mustChangePassword)throw new HttpError(428,'먼저 비밀번호를 변경해 주세요.');if(m.role!=='DO'&&m.workspaceVersion!=='v2')throw new HttpError(403,'버전 2 병원 세팅 권한이 필요합니다.');return m;}
+export async function existingHospital(id:number){if(!Number.isSafeInteger(id)||id<1)throw new HttpError(400,'병원을 선택해 주세요.');const row=await db().prepare("SELECT id,data FROM records WHERE id=? AND kind='customer' AND (json_extract(data,'$.setupGroup') IS NOT NULL OR json_extract(data,'$.name')='테스트 병원')").bind(id).first<{id:number,data:string}>();if(!row)throw new HttpError(404,'세팅 병원을 찾지 못했습니다.');return row;}

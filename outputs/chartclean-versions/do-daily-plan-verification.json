@@ -1,0 +1,13 @@
+{
+  "deploymentId": "dpl_2nRJhDRh49E1wi56bsFd6FMeyhMN",
+  "productionUrl": "https://erp.chartclean.com",
+  "productionBuild": "passed including TypeScript",
+  "dailyPlanBoundaryChecks": 10,
+  "loginRouteChecks": 9,
+  "uiChecks": "desktop and mobile, form save and date isolation with isolated local fixtures",
+  "anonymousDailyPlanStatus": 401,
+  "receivablesIncluded": false,
+  "productionDatabaseWriteTestPerformed": false,
+  "theme": "white-gray-navy",
+  "sourceDate": "2026-10-09"
+}

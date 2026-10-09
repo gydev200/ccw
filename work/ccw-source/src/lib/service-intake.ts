@@ -1,0 +1,3 @@
+export const INTAKE_SOURCES=['EMR 변화','전화','메시지·환자 화면','병원 요청','직원 확인'] as const;
+export const INTAKE_SERVICES=['진료 후 케어','예약 맞춤 안내','검사 결과 알림','상담 후 안내','장기미내원 관리','CTI','해외환자 번역'] as const;
+export function validateIntake(v:any){if(!v||typeof v!=='object'||!INTAKE_SOURCES.includes(v.source)||!['환자','병원','내부 처리'].includes(v.destination))throw Error('접수 경로와 전달 대상을 확인해 주세요.');if(!Array.isArray(v.services)||!v.services.length||v.services.some((s:any)=>!INTAKE_SERVICES.includes(s)))throw Error('관련 서비스를 선택해 주세요.');const text=(x:any)=>{if(typeof x!=='string'||x.length>2000)throw Error('접수 기록 형식을 확인해 주세요.');return x};return {source:v.source,destination:v.destination,services:[...new Set(v.services)],sourceRef:text(v.sourceRef||''),occurredAt:text(v.occurredAt||'')};}

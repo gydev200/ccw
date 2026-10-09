@@ -1,0 +1,13 @@
+const fs=require('node:fs');const vm=require('node:vm');const assert=require('node:assert/strict');
+const route=fs.readFileSync('app/v2/electronic-approval/[[...path]]/route.ts','utf8');
+const start=route.indexOf('const embeddedRender=render;');const end=route.indexOf('init();`);',start);assert(start>0&&end>start);
+const bridge=route.slice(start,end).replaceAll('\\n','\n');
+let listener,draws=0,calls=[];const parent={postMessage(){}};const ctx={data:{user:{role:'employee'}},editor:null,tab:'approvals',approvalFilter:'all',location:{origin:'https://erp.chartclean.com'},parent,render(){draws++},window:{addEventListener(type,fn){listener=fn}},async api(name,body){calls.push(name);ctx.data.user.role=body.role},async refresh(){calls.push('state')},toast(){}};vm.createContext(ctx);vm.runInContext(bridge,ctx);
+(async()=>{const send=(view,origin=ctx.location.origin,source=parent)=>listener({origin,source,data:{type:'ccw-approval-navigate',view}});
+await send('draft','https://untrusted.example');assert.equal(draws,0);await send('draft',ctx.location.origin,{});assert.equal(draws,0);await send('invalid');assert.equal(draws,0);
+await send('draft');assert.equal(ctx.approvalFilter,'draft');assert.equal(draws,1);assert.deepEqual(calls,[]);
+await send('compose');assert.equal(ctx.editor.type,'approval');await send('all');assert.equal(ctx.editor,null);
+await send('inbox');assert.equal(ctx.data.user.role,'director');assert.equal(ctx.approvalFilter,'pending');assert.deepEqual(calls,['preview-switch','state']);
+await send('processed');assert.equal(ctx.approvalFilter,'processed');assert.equal(calls.length,2);await send('history');assert.equal(ctx.tab,'requests');assert.equal(ctx.data.user.role,'employee');
+assert(route.includes("api?'no-store':'private, max-age=300'"));assert(route.includes('if(api&&cookie)'));console.log('PASS: same-role navigation skips fetch; roles and origin/source checks preserved; API responses uncached');
+})().catch(e=>{console.error(e);process.exit(1)});

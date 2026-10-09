@@ -1,0 +1,19 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const http=require('node:http');
+const esbuild=require('esbuild');
+const {chromium}=require('/Users/songhs/.agents/skills/gstack/node_modules/playwright');
+(async()=>{
+ const result=await esbuild.build({stdin:{contents:"import React from 'react';import {createRoot} from 'react-dom/client';import Workspace from './app/workspace';createRoot(document.getElementById('root')).render(<Workspace/>);",resolveDir:process.cwd(),loader:'tsx'},bundle:true,write:false,platform:'browser',format:'iife',jsx:'automatic',loader:{'.css':'empty'},plugins:[{name:'synthetic-child-panels',setup(b){b.onResolve({filter:/^\.\//},a=>a.importer.endsWith('/app/workspace.tsx')?{path:a.path,namespace:'panel'}:undefined);b.onLoad({filter:/.*/,namespace:'panel'},()=>({resolveDir:process.cwd(),loader:'tsx',contents:"import React from 'react';export const journeyStage=(x)=>x;export default function Panel(){return <section><p>합성 업무 상세</p><details><summary>검수 안내문</summary><p>읽고 있는 내용</p></details><textarea aria-label='작성 중 메모'/></section>}"}));}}]});
+ const js=result.outputFiles.find(x=>!x.path.endsWith('.css')).text;let reads=0;
+ const server=http.createServer((req,res)=>{if(req.url==='/app.js'){res.setHeader('Content-Type','text/javascript');res.end(js)}else if(req.url==='/api/erp'){reads++;res.setHeader('Content-Type','application/json');res.end(JSON.stringify({member:{id:'synthetic-staff',person:'kyunghwa',role:'STAFF',label:'검수 직원',access:{orgs:['DM','OS','SS','PM','DSS'],screens:['업무 지시']}},orgs:[{id:'SS'},{id:'DM'},{id:'OS'},{id:'PM'},{id:'DSS'}],records:[],workers:[],members:[],identity:{id:'synthetic'}}))}else if(req.url==='/employee'){res.end('<h1>직원 첫 화면으로 이동됨</h1>')}else{res.setHeader('Content-Type','text/html');res.end('<div id="root"></div><script src="/app.js"></script>')}});
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;
+ const browser=await chromium.launch({headless:true});try{
+ const p=await browser.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.clock.install();await p.goto(base+'/#b');await p.getByRole('button',{name:'SS',exact:true}).click();await p.getByRole('button',{name:'C콜 · 환자 연락',exact:true}).click();await p.getByText('검수 안내문',{exact:true}).click();await p.getByLabel('작성 중 메모').fill('미저장 메모 보존');const before=reads;await p.clock.fastForward(31000);await p.waitForTimeout(100);assert(reads>before,'background refresh must still fetch');assert.equal(new URL(p.url()).pathname,'/','background refresh must not redirect employee');assert.equal(await p.getByLabel('작성 중 메모').inputValue(),'미저장 메모 보존');assert(await p.locator('details').evaluate(e=>e.open),'expanded content stays open');
+ await p.getByRole('button',{name:'새로고침',exact:true}).click();await p.waitForTimeout(100);assert.equal(new URL(p.url()).pathname,'/','manual refresh must not redirect employee');assert.equal(await p.getByLabel('작성 중 메모').inputValue(),'미저장 메모 보존');
+ await p.clock.fastForward(91000);await p.waitForTimeout(100);assert.equal(new URL(p.url()).pathname,'/');assert.equal(await p.getByLabel('작성 중 메모').inputValue(),'미저장 메모 보존');assert.deepEqual(errors,[]);
+ await p.goto(base+'/');await p.waitForURL(base+'/employee');
+ await p.goto(base+'/#orders');await p.waitForURL(base+'/employee');
+ console.log(JSON.stringify({passed:10,checks:['30s refresh preserves employee C-call view','manual refresh preserves view','unsaved text preserved','expanded details preserved','multiple refresh cycles preserved','first employee entry still redirects','orders entry still redirects','no browser errors'],realData:false}));
+ }finally{await browser.close();await new Promise(r=>server.close(r))}
+})().catch(e=>{console.error(e);process.exitCode=1});

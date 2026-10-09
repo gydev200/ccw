@@ -1,0 +1,3 @@
+import {member,owner,fail,HttpError} from '@/lib/server';
+import documents from '@/lib/ca-branding-docs.json';
+export async function GET(req:Request){try{owner(await member());const name=new URL(req.url).searchParams.get('document')||'';if(!Object.hasOwn(documents,name))throw new HttpError(404,'자료가 없습니다.');return new Response(documents[name as keyof typeof documents],{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'private, no-store','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'self'",'X-Content-Type-Options':'nosniff'}})}catch(e){return fail(e)}}

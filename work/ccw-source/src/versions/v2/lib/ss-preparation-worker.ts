@@ -1,0 +1,1 @@
+export async function isPreparationWorker(req:Request,token:string|undefined){if(!token)return false;const hash=async(s:string)=>new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));const [a,b]=await Promise.all([hash(req.headers.get('authorization')||''),hash('Bearer '+token)]);let diff=0;for(let i=0;i<a.length;i++)diff|=a[i]^b[i];return diff===0;}

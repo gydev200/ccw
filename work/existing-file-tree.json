@@ -1,0 +1,4448 @@
+[
+  {
+    "name": "src",
+    "type": "directory",
+    "mode": 16749,
+    "children": [
+      {
+        "name": ".env.example",
+        "type": "file",
+        "mode": 33188,
+        "uid": "ae9abdd59930790ab71580a69ef819fe2b1d68e5"
+      },
+      {
+        "name": ".impeccable",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "hook.cache.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a649e334fa0d0564679947c31cbb52092b9cf469"
+          }
+        ]
+      },
+      {
+        "name": ".oxfmtrc.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "cd1cbef2593fb5726ac52f8db4fe2f5938ab0928"
+      },
+      {
+        "name": ".oxlintrc.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "736a0052ab0422f00395073ebae543a017b2a83f"
+      },
+      {
+        "name": ".vercelignore",
+        "type": "file",
+        "mode": 33188,
+        "uid": "2dcb1cb055105d2178411ff9d6da69c8172070a9"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "mode": 33188,
+        "uid": "d962100a3c28f0d01d207d4295fa968f5987ce83"
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "academy-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "50c350044926628afe06f84ac5218794d3e7c235"
+          },
+          {
+            "name": "academy.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ed44eba6876912c43ffd55903384b1a71180c147"
+          },
+          {
+            "name": "ai-mentor",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "2e9e6dc5a651c6ea5a8dbe1257a6d84da5164d43"
+              }
+            ]
+          },
+          {
+            "name": "api",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "academy",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "aeb1dbdf32da4cbe128f9c84e17a52f3a1ad5df9"
+                  }
+                ]
+              },
+              {
+                "name": "auth",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "344a8f3114a48d9c5d2418f5ce247848897f030b"
+                  }
+                ]
+              },
+              {
+                "name": "ba-packages",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "a67a6427a5e98aac86c29b277e09573a1a90f0ae"
+                  }
+                ]
+              },
+              {
+                "name": "ba",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "b811862e69c2323956b681e9be114fa5d70d950e"
+                  }
+                ]
+              },
+              {
+                "name": "bcall-reference",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "b97b59470c85bc0b4bb0c3c7d8d308447279e363"
+                  }
+                ]
+              },
+              {
+                "name": "brand-purchase-brief",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "a9b210c29d541a2116c5b9a4640d1b27ebe07f2d"
+                  }
+                ]
+              },
+              {
+                "name": "bridge",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "b889a9638ffd27814dff6b894f870feb8d9f3f6e"
+                  }
+                ]
+              },
+              {
+                "name": "ca-branding-docs",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "a44288c453d6969ee7edcbf6edbc3f6993b369c3"
+                  }
+                ]
+              },
+              {
+                "name": "ccall-recording",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "174791237e3f4939ab41d2eb56a1b0f507c97782"
+                  }
+                ]
+              },
+              {
+                "name": "ccall-sent",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "0eb3612c321f7fe830590d2a817500275f2f0bb3"
+                  }
+                ]
+              },
+              {
+                "name": "ccall",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "99b35e1cf16cba1ce42b89c49a396e5ed07b4add"
+                  }
+                ]
+              },
+              {
+                "name": "ccfm",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ace81dbbb708684d289e749cf7e554d7a16e1e61"
+                  }
+                ]
+              },
+              {
+                "name": "clinic-billing",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "handler.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "f61b31e9298e08e632222e0af990a01372f85b42"
+                  },
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "fd033064b60f136d94ba3c5ef39a823462f21d03"
+                  }
+                ]
+              },
+              {
+                "name": "control",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ed622cbaf08a86dacff9f258bcb1ac982b113105"
+                  }
+                ]
+              },
+              {
+                "name": "do-work-map",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "f14b47f4bbd3ffa403d08eb92e09ea8caef35cc6"
+                  }
+                ]
+              },
+              {
+                "name": "dss-review",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "92699ba645727987336daec28a82af07c9b1e3aa"
+                  }
+                ]
+              },
+              {
+                "name": "dss-strategy",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "13721eeb9116225e34b0c747fe9a3c480eef330a"
+                  }
+                ]
+              },
+              {
+                "name": "erp",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "c55ece0de982b3d4c44780be7d0b43108ec86a47"
+                  }
+                ]
+              },
+              {
+                "name": "file-transfer",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "929876caf77bed4203395c5fb3f348257e14ce72"
+                  }
+                ]
+              },
+              {
+                "name": "files",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "f3578c9314ea714846d9acc4cbb308f09f0ac9c4"
+                  }
+                ]
+              },
+              {
+                "name": "fm-routines",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "768c3fdecec144b2f5bcfad29ab872ab0b0a2128"
+                  }
+                ]
+              },
+              {
+                "name": "hospital-access",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "redeem",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "route.ts",
+                        "type": "file",
+                        "mode": 33188,
+                        "uid": "bd85ba732cd065133198c209a6caba9e5ea0b9d8"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "8f3b3aa2c7ea882f38041973a9b62af966ca08c1"
+                  }
+                ]
+              },
+              {
+                "name": "hr-evidence",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "9d51f45cf1b1ea617020a63d589c346eccb38a38"
+                  }
+                ]
+              },
+              {
+                "name": "hr-operations",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "d665b6245051d80eff7ad2c725999defda6f651a"
+                  }
+                ]
+              },
+              {
+                "name": "hr-people",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "58b4de1e815f1b7e317cf784b65dc33304420f40"
+                  }
+                ]
+              },
+              {
+                "name": "hr",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "315d275e2c8d7a96474c7dfbb662db61c9d4d969"
+                  }
+                ]
+              },
+              {
+                "name": "management-board",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "7c9bcbd7a8260a343ea9e8c24d517a56c409c096"
+                  }
+                ]
+              },
+              {
+                "name": "management-map",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "commands",
+                    "type": "directory",
+                    "mode": 16749,
+                    "children": [
+                      {
+                        "name": "route.ts",
+                        "type": "file",
+                        "mode": 33188,
+                        "uid": "a4a420aa170ef1237b00f5214d37643790fc3696"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "19b3d538c86bc1881c65250379311fde413f7132"
+                  }
+                ]
+              },
+              {
+                "name": "manual",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "d74067fb6045bd2f484b619392236aaf4c9c4680"
+                  }
+                ]
+              },
+              {
+                "name": "mentor",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "051e73e54dbb74de559952d022941e2911d5a17d"
+                  }
+                ]
+              },
+              {
+                "name": "org",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "b87004f9598fb4dd0c4eacaa07364d9d7763584b"
+                  }
+                ]
+              },
+              {
+                "name": "outreach",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "9de3b476cd207facc43b49985786c40d2776d62e"
+                  }
+                ]
+              },
+              {
+                "name": "portrait",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "4603cb78dd40680b0cbc1fb63338ba7d104006d8"
+                  }
+                ]
+              },
+              {
+                "name": "public-exam",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "70320623d9280200c220d784d6c0042c5016e4d3"
+                  }
+                ]
+              },
+              {
+                "name": "recell-reservations",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "f48b09b369423e9c2435cd97fb645a0d5b1b21a0"
+                  }
+                ]
+              },
+              {
+                "name": "remote-access",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "33c405c3d2419c669d90367cbc4a721cbb0f549e"
+                  }
+                ]
+              },
+              {
+                "name": "seats",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ad65bb05d71e739ab6b8b8d2d348b50861ec3a89"
+                  }
+                ]
+              },
+              {
+                "name": "service-settlement",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "dacc9f8c0aa35e0d71196c3d83d873bab3c9def4"
+                  }
+                ]
+              },
+              {
+                "name": "setup-hospitals",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "1cfc9dee9e5371b850ac36071510e58e8bfd99ce"
+                  }
+                ]
+              },
+              {
+                "name": "setup-journey",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "854ad8d35f60f87b61a83870ca4f69f5fff505ea"
+                  }
+                ]
+              },
+              {
+                "name": "ss-activity",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "902b404540122d4482bf7e8936177fbc4de247b2"
+                  }
+                ]
+              },
+              {
+                "name": "ss-approval",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ed310ddf44bae6bab6cb07b457e26421f810bfa7"
+                  }
+                ]
+              },
+              {
+                "name": "ss-content-catalog",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "811ecb33ca83ac7a29cce6c1b64e7ea65622566e"
+                  }
+                ]
+              },
+              {
+                "name": "ss-dispatch",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "273b6a58ded8b34c3e84f322bcf103a11dd4b320"
+                  }
+                ]
+              },
+              {
+                "name": "ss-finance",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "5653f7a8187daa9f9a8e4fa0ca6bd59d2026f6b6"
+                  }
+                ]
+              },
+              {
+                "name": "ss-health",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "0a98d705e0f4f394832f58714dcad730ca930f20"
+                  }
+                ]
+              },
+              {
+                "name": "ss-inventory",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "e2fe09019b74eeeedcb1ae2841516f406922997c"
+                  }
+                ]
+              },
+              {
+                "name": "ss-operations",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ca1597bb429d0cf41d999386ddb70c42cdea4013"
+                  }
+                ]
+              },
+              {
+                "name": "ss-preview",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "032e92cd7fe030dd2a592a5ab3ce9796c5d4e7c8"
+                  }
+                ]
+              },
+              {
+                "name": "ss-production",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "5843c8cf54a5f3f0cf733e0b99e666805fdeb7b3"
+                  }
+                ]
+              },
+              {
+                "name": "ss-runner",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "ee3fa8106c1b409bd61c012c58754110588fef30"
+                  }
+                ]
+              },
+              {
+                "name": "ss-service",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "9305cfda1d735661917c3703a3acaf67d4694b76"
+                  }
+                ]
+              },
+              {
+                "name": "ss-today",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "9d5014787e8b48c66d9cfbb11227736bb12e858f"
+                  }
+                ]
+              },
+              {
+                "name": "ss-week",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "bc5ad361d3045b89c6af06b44f6fd4986456319a"
+                  }
+                ]
+              },
+              {
+                "name": "work-orders",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "c64f7ed9d927b5f9b20c7335f9a40c54be533be6"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "avatar-profile",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ec52a26818e1830d662cd90e041f513028653f75"
+              }
+            ]
+          },
+          {
+            "name": "ba-document",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "344853407fe37190ca0c215c64489509cf7a9818"
+              }
+            ]
+          },
+          {
+            "name": "ba-production.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "be73c21733564d2e744c6c7d5868809800e8430b"
+          },
+          {
+            "name": "ba-production.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a608a5981e01a5a7f14a89b0f02e4b3ae85b03dc"
+          },
+          {
+            "name": "ba-workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f605be96b5a379cddd6cb9dd3eb6a330ac218d07"
+          },
+          {
+            "name": "brand-home.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "11dd58cab8381e03549a01370bd62ebd7416bba1"
+          },
+          {
+            "name": "brand-purchase-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "fb902df6e7d458acf1712fd8c4f578927ddb3549"
+          },
+          {
+            "name": "ca-workspace.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "51f44721ad6b2a82924e2ee03bef86c465e1d59b"
+          },
+          {
+            "name": "ca-workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "571473c6ea6448a00d78bf3ff90ebe6873d1fe17"
+          },
+          {
+            "name": "care-guides",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "[id]",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "route.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "adee256a8813b7407b7e92dc0d59e696e006ea80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ccall-sent.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "12dbdaa823a1a17ae4ccae24c4488b73d414bffb"
+          },
+          {
+            "name": "ccall-workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3dbb9d78dd3d21f53e256f36d28a91923cff9b5b"
+          },
+          {
+            "name": "ccall.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "7a770a12819ca21031e84d7fa9d11b977b186581"
+          },
+          {
+            "name": "ccfm-operations.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5426ec46b7dd3c7fc6cd85997187d39ce2358e79"
+          },
+          {
+            "name": "ccfm.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d15594cb4c35bb400084de59c932cb4046ba97ac"
+          },
+          {
+            "name": "ccfm.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "68a00a08f6ec9282a6180af5ff8afbc401a0ddeb"
+          },
+          {
+            "name": "cchr-home.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "928f2e455c5ab5415efb8548c594e9557bdf3603"
+          },
+          {
+            "name": "cchr-home.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b341efd6a146084bd5fa0303979fa4785683205a"
+          },
+          {
+            "name": "collection-board.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e54e9d2de42f8ac7c046818f7bfc39faff797ef8"
+          },
+          {
+            "name": "company-organization",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "7577bea78aea98010af8deb512036c21e82d9eef"
+              }
+            ]
+          },
+          {
+            "name": "component-variants.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "131855a652a1e62ae57b04b704a153a2c6eebe55"
+          },
+          {
+            "name": "control-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4331d02e80c35e694e14ec3300e280ad4d4b615b"
+          },
+          {
+            "name": "cost-accounting.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2023e28ff058cec103f9fdb925fa80aebb5c0e72"
+          },
+          {
+            "name": "custom-requests.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "cc1cb934f5c4fd4e9c9f79ed9785d1dee32913db"
+          },
+          {
+            "name": "customer-journey.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9c2eedc3400fd409addcba00ee3e00e20b34eceb"
+          },
+          {
+            "name": "director-desk.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bcc41d17fcd834bcfa5387f6c0d14ad7d155201d"
+          },
+          {
+            "name": "director-desk.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0aa0122be2af36e340fdc484c79941ca282d8c43"
+          },
+          {
+            "name": "dm-manual",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "34c182d0016e6df2135514b1abcab12c97b8eeb0"
+              }
+            ]
+          },
+          {
+            "name": "dm-operations.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f71322273a7a7c8d2dd70787c64b59071a22e73e"
+          },
+          {
+            "name": "dss-agenda-editor.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "baff421e2256f786e9d36498c35444a2821ad3ef"
+          },
+          {
+            "name": "dss-execution-dialog.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "627a93a34532188e6024fbb5339d72d473eef311"
+          },
+          {
+            "name": "dss-management.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e5064718bf49231edd8b6e9741d89c0d74a95971"
+          },
+          {
+            "name": "dss-management.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "938ff86f36dc889032754556820fb08b997c23b9"
+          },
+          {
+            "name": "dss-operations.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c0122b113bb4b22a311dbc22102d33f4e36b715e"
+          },
+          {
+            "name": "dss-operations.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e8cda4d7f8c90e5af5499ba6549bfb3fb629b7d0"
+          },
+          {
+            "name": "dss-review",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a16ea8e534cbdba7ca71265b9ae9bcc4684e151f"
+              }
+            ]
+          },
+          {
+            "name": "dss-secretary.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b44d5490b1f60eb84b9f6b97296c30b29be1e1ba"
+          },
+          {
+            "name": "dss-strategy.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6ec4c7055c7215e3d78cafebd62c7af212ab4e5a"
+          },
+          {
+            "name": "dss-strategy.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e4512b7f85569ccf1a7de45c700b5f483aca57d9"
+          },
+          {
+            "name": "employee-hub.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5c55d83122c7e19712bae89f35273c2e38cc1a1f"
+          },
+          {
+            "name": "employee-hub.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ad17d114df4f862ad70ca5d60d502efb2fceb151"
+          },
+          {
+            "name": "employee-work-desk.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a765fc530c7fa50cc26e787ab3b222087948a45a"
+          },
+          {
+            "name": "employee-work-desk.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6e0ff77c7800748911b064835a2860e238e06f6f"
+          },
+          {
+            "name": "employee",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "fd34ea5ac836606a9aa5be3a10cfd826f865ef03"
+              }
+            ]
+          },
+          {
+            "name": "exam",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "302ec69b9093b34ce958d2b053abd63bb5e5b8bb"
+              }
+            ]
+          },
+          {
+            "name": "fm-control.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "db035700203f1cfbb09f22dd59df3a6b013478c3"
+          },
+          {
+            "name": "fm-control.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d28d9cd8527ae50747165fc248c5482635ff1feb"
+          },
+          {
+            "name": "fm-routine-control.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e3eb573d4b938bb6a74452c64691499b40717488"
+          },
+          {
+            "name": "globals.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "033c682ef5f4e01b60449dd785ffbfee2b0c6e87"
+          },
+          {
+            "name": "home",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "be0d7da98b12a5770215bd25e259177a45ef68d6"
+              }
+            ]
+          },
+          {
+            "name": "hospital-access-link.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "57eb008d25718335d9f659f4295436383e222c85"
+          },
+          {
+            "name": "hospital-admin-health.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "75f519145ec44e3b91e0cb744513a080ccda2e29"
+          },
+          {
+            "name": "hospital-brief.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "09b3e147441f5bea5afdf772210272b37cf103e4"
+          },
+          {
+            "name": "hospital-onboarding.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "97a13c204a0894396a3fb869e5943123ef92c9e9"
+          },
+          {
+            "name": "hospital-reporting-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4b4df9a9d7e419da9a74b296ab44539621d89962"
+          },
+          {
+            "name": "hospital-rollout.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "60aef88cd47cb216794d7b6cd66d15f43beed714"
+          },
+          {
+            "name": "hospital-transactions.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2728a38aa448b827fc7648d0ae4a3bd7ad3a9031"
+          },
+          {
+            "name": "hr-compliance-guide.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "502626aeef16790fe32e5df6378903b0eef6fbdc"
+          },
+          {
+            "name": "hr-department-work.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a8918821a91d2125d76e14c8d5bcc3450fb568c8"
+          },
+          {
+            "name": "hr-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2c2b98c0cb3df81ec90161eeb70eac72073973e2"
+          },
+          {
+            "name": "hr-people-registry.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "03bf4ec48e8ad74f2bb87de7108249805a360017"
+          },
+          {
+            "name": "hr-record-summary.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ba670e40702d122e75d5b32d69f0d8d3a6efa777"
+          },
+          {
+            "name": "hr-recruiting-brand.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c965ff136d3d13b41167e38ab35ecc02384d19fa"
+          },
+          {
+            "name": "hr-recruiting-brand.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b6c550a5272a2a1fc5d7e350691060232e18d2f5"
+          },
+          {
+            "name": "hr-role-guide.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c406179ebe4fd34ad0116b426440f53588b30aef"
+          },
+          {
+            "name": "hr-source-guide.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "843b2465a01202ef7fef0b5e9bea593b7aec3e59"
+          },
+          {
+            "name": "hr-team-evidence.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "15ddc45d3ea9ef3312c0e5eb766a58de191262dc"
+          },
+          {
+            "name": "hr",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "1f2b2fe66085de6393f07273ce7639dedce8a5b1"
+              }
+            ]
+          },
+          {
+            "name": "layout.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "40ec5e9526fb9595f802f66911e894af361dd419"
+          },
+          {
+            "name": "login",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "147f20c527d6b3b701d4c4ea81731a7c1608cff9"
+              }
+            ]
+          },
+          {
+            "name": "management-board.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4d38bc85d999bba56d6067c05e11fcec10b9ebe0"
+          },
+          {
+            "name": "management-frame-nav.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "17f1ccfc2b91037bb5dd1c53608f59e938149a47"
+          },
+          {
+            "name": "mentor-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3be8e04bbe85634dcef6c4856552eec8c8295dd9"
+          },
+          {
+            "name": "my",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "5548e5de0a8cb6051e6e12e1f2b8ebc763e9a18f"
+              }
+            ]
+          },
+          {
+            "name": "op-control.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f3e12adbfc962c0f6ffe5ac4e5ab06968e4acea8"
+          },
+          {
+            "name": "orders",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "73490b0c149ae816ce5c1926c3fe3798a245c67d"
+              }
+            ]
+          },
+          {
+            "name": "org-home.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "21ea4b366b2215f7559bd229740db59e8f315739"
+          },
+          {
+            "name": "organization-nav.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c4ba51e27161fb67473d80b2f4ad1b3f39f27bd9"
+          },
+          {
+            "name": "outreach-map.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2a0a37d8033b087dbeaa7c7b06badd8f4ce59eb1"
+          },
+          {
+            "name": "outreach-workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5df13b879d847875dad224a805b688afe7e0a9df"
+          },
+          {
+            "name": "outreach.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c1967131a8f935ada219ca479c5a85d655d8058e"
+          },
+          {
+            "name": "page.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "28ec64813a0415e24e1438663fe0e1708e1f39aa"
+          },
+          {
+            "name": "password",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "8618bbb98e99b03f106a12f6fa7555196320e95b"
+              }
+            ]
+          },
+          {
+            "name": "recell-reservation-sync.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "81d4bf6787f77b5db4633d0115e5785f181e6093"
+          },
+          {
+            "name": "remote-access",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3aa7693e52032f655e2f44c307be3204200729e9"
+              }
+            ]
+          },
+          {
+            "name": "sales-worksheet",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "route.ts",
+                "type": "file",
+                "mode": 33188,
+                "uid": "51e78f7c6287c96b92f6c8990315262c0e0e9f51"
+              }
+            ]
+          },
+          {
+            "name": "seat-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "213765fd0418a82a1092f4d4da8b533e29f2aac2"
+          },
+          {
+            "name": "service-intake.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "426f04c708001acdd1de59a044ba6ba1bf34967a"
+          },
+          {
+            "name": "service-next-steps.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "95f795a39e9cdfb697bef74f00dcd316152e834f"
+          },
+          {
+            "name": "service-operations-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "59ed022ae6f3b00ed60b9e9351dd018d522d1d6a"
+          },
+          {
+            "name": "service-review-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "aa1d09e2454d24743bfd00c2f9a86f412c89bb42"
+          },
+          {
+            "name": "service-settlement.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2116381aaae6480cdb81c4a4bf72ddae26ee76a3"
+          },
+          {
+            "name": "service-settlement.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "50d2261cfd4bbc437fb571135f77c8a4a7814923"
+          },
+          {
+            "name": "service-supply-board.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e16df103802e2f70c62c642326b6f23b17f8b760"
+          },
+          {
+            "name": "service-today-summary.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f2efa309912035e41eee9814ca2eb6132e56d404"
+          },
+          {
+            "name": "ss-approval.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "7f4992f246a4090a306f71938f9ffda12d8eaeb5"
+          },
+          {
+            "name": "ss-content-catalog.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4f0ce74b74381a9c0c2e712d05d5c7cde614afe8"
+          },
+          {
+            "name": "ss-guide.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6b8fc2c32d0f8482fd3fc64777e7d9a1a554f21b"
+          },
+          {
+            "name": "ss-money.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "61a49dbcffc3782fad4934eb766409c2eb702687"
+          },
+          {
+            "name": "ss-operations.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "89756a4bd22a8c700c9a623283c0d72729e170cc"
+          },
+          {
+            "name": "ss-production.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d7acd46c92a028083ade4f9af804b265e0a0e6de"
+          },
+          {
+            "name": "ss-production.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "47f6839714f531ecd85eb9e44f1f6900e2ee72e0"
+          },
+          {
+            "name": "ss-remote-access.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9fff1514cf5ad7ed2094e31ce80d3f97d3f4f75b"
+          },
+          {
+            "name": "ss-runner-control.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "cdb770b0af5bc62e539bb3ddfd521064e840ab0b"
+          },
+          {
+            "name": "ss-service-center.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4b1694289e1d9bf6c0fb42f4befcfa601643d0ab"
+          },
+          {
+            "name": "ss-service-center.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e571273d565643bd72dcdefb16cad8e10bcbdb19"
+          },
+          {
+            "name": "ss-service-detail.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ba5951ac7985761b3144f9cd923b4f7f8a1e69ca"
+          },
+          {
+            "name": "ss-service-live.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "de2a812d21e20f3692e68f2efff191d7c16a4c54"
+          },
+          {
+            "name": "ss-setup-journey.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "306fe247ccec374ac539a0f65a2aba51bf5093b6"
+          },
+          {
+            "name": "ss-week.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e14a16c7d645d957bce28de717daf2825f73db0b"
+          },
+          {
+            "name": "ss-workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "aed206e1f4f16351771a48972741139875464ee9"
+          },
+          {
+            "name": "unallocated-receipts.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f3b1642913fe74499e399acbbffdc9b67e01d455"
+          },
+          {
+            "name": "uniform-guidance.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f9a4f75a84a9644c0a15d783a052be3911bc452a"
+          },
+          {
+            "name": "work-orders-panel.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4c90199c5904e0b2157b2cfcbb987dfe20d6188b"
+          },
+          {
+            "name": "work-orders.css",
+            "type": "file",
+            "mode": 33188,
+            "uid": "158e0ccd66fe7d59fbdb5892ddaa8625d5a87aeb"
+          },
+          {
+            "name": "workspace.tsx",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1ba64e5c9379f86375ab45cc9b1ad5d0468d77c6"
+          }
+        ]
+      },
+      {
+        "name": "components.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "577af703bacf304e5c0cc5d5a7d331202b415b0a"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "ui",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "accordion.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "fcad5e1a927c063fe92e764f3b151062026478b0"
+              },
+              {
+                "name": "alert-dialog.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3614879c23a187a8cf85083d6db037a4f1f9c0a9"
+              },
+              {
+                "name": "alert.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "28b1b686eedfacad819bb468da724c462d6f495b"
+              },
+              {
+                "name": "aspect-ratio.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "7a1661d43dc339e35bb25504c88d7547b05ea8ba"
+              },
+              {
+                "name": "attachment.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "de8f27535f2015f9b14b32c36ad524d894aed175"
+              },
+              {
+                "name": "avatar.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b2399ba87042646a1936b082e7be0fc27b9bdae5"
+              },
+              {
+                "name": "badge.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "c3a38482f47f0659d4e261b422e1709b189c5d45"
+              },
+              {
+                "name": "breadcrumb.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b5b9fc25aa60a9416655b6ddfe54246048a912ad"
+              },
+              {
+                "name": "bubble.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "6361979975e89c9ba68c883d4b0e52156e4e5460"
+              },
+              {
+                "name": "button-group.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "623d74a214c17bfcf3a887a4f47aa9c7092cd7fa"
+              },
+              {
+                "name": "button.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "e35428aca3c188cee990e51d6ea8857fb84ce70b"
+              },
+              {
+                "name": "calendar.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "2b7b0c4e2661859cd1d05df56e73d5260e7d5a88"
+              },
+              {
+                "name": "card.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "c0a721216e67dd408f95744118e8d5bf0c77a681"
+              },
+              {
+                "name": "carousel.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "41d7230cb25c99dfa42f9c152c3f5d84dc1b9d9d"
+              },
+              {
+                "name": "chart.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "893a601d2f659c2de897f752b1422bd3394da5ba"
+              },
+              {
+                "name": "checkbox.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "5380380fd2be10f8a2a3a44cdef4325c98205ba2"
+              },
+              {
+                "name": "collapsible.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "817e63fac3571381db716ac6627678a2953de2ec"
+              },
+              {
+                "name": "combobox.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "76466a6fcdaf70e9536ee814a67a76aedb138074"
+              },
+              {
+                "name": "command.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a9bc587eeaf4a25ca92683b3ec1bbe2c3efef5ea"
+              },
+              {
+                "name": "context-menu.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a14aa4b0800ac6d86db02f6297c664ce8a4b8962"
+              },
+              {
+                "name": "dialog.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "fa4cd2721385a0231b5128d88043df46b1cf0b7a"
+              },
+              {
+                "name": "direction.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b92c8ea2fc1e29bd4cc7b07e7bf69b951afaa504"
+              },
+              {
+                "name": "drawer.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "45471299b4f4c52344746ece501f8ea6fa4efc6b"
+              },
+              {
+                "name": "dropdown-menu.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "f43618cec7919183278d5ea94860bad5e326dff5"
+              },
+              {
+                "name": "empty.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a68da44f75ff65cb543b1e454a8ea3eaa665acb9"
+              },
+              {
+                "name": "field.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "848eac1d37a4cc7aa7362bc21cf6977ffcecd44c"
+              },
+              {
+                "name": "hover-card.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3e9a6318772be265ca3f285b94e3e5c30a7ef3dd"
+              },
+              {
+                "name": "input-group.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a8f0470306effc70a0c8bb90d7dca54c90aabf51"
+              },
+              {
+                "name": "input-otp.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "24ff4179bf636f080c1624cfb6a1433d09162fc5"
+              },
+              {
+                "name": "input.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "714cbfc0564f0bf93336f6b36ee35a6f20d8ae9a"
+              },
+              {
+                "name": "item.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "154eae4d8c7a300c45d91ea5a276946567304640"
+              },
+              {
+                "name": "kbd.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a8468f9d9ee41febb3f57d297ab8cc6cd52cec8c"
+              },
+              {
+                "name": "label.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "339a7b7896c7863ee8c8a220a32746361e36781b"
+              },
+              {
+                "name": "marker.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3130e4ab55c06b426f41b1ed972c839ae9dc4b1b"
+              },
+              {
+                "name": "menubar.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "2ac64b86e7ee76337180537df148bdbd5f66b210"
+              },
+              {
+                "name": "message-scroller.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "c4666c9ac3b16085f13812b09ae7d57bbc016ac9"
+              },
+              {
+                "name": "message.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ce0395b5564101228ea2e768f99d64663d825a40"
+              },
+              {
+                "name": "native-select.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b0c582db435b32cb7b1b9d07ceb309f2235bc981"
+              },
+              {
+                "name": "navigation-menu.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "60389a0c814cb8df91a869e6cd1409814b8a366d"
+              },
+              {
+                "name": "pagination.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "e38845d697d528a1067a9defcb17c918196f103e"
+              },
+              {
+                "name": "popover.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "aba0025db626f54b8826d88c9ae40abdee89f021"
+              },
+              {
+                "name": "progress.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "6330518fa535a332f54ced93e6b535c8449d95e0"
+              },
+              {
+                "name": "radio-group.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "7f77e47106fdf225211e9b0468f30f9c15e02bf5"
+              },
+              {
+                "name": "resizable.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "0cc7552e2e0921216fc7e95868389d8db8dd50f7"
+              },
+              {
+                "name": "scroll-area.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "8765c0f7c75836f52c3f07bed1ea3591e5cb4d4d"
+              },
+              {
+                "name": "select.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "38cd6ea36908750217a6b89aae70755a426f5c88"
+              },
+              {
+                "name": "separator.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "9d4299988dbc16be779557c1a72bd7879be75ff2"
+              },
+              {
+                "name": "sheet.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ff0c2edff4bae2773d5eaa7d52142a3030ec768e"
+              },
+              {
+                "name": "sidebar.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "81bdd9ae49068cf1e690d93b136f719f9f32e51a"
+              },
+              {
+                "name": "skeleton.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "6ca0dbc0afc5cf5705e433bba23d9701e8ee8192"
+              },
+              {
+                "name": "slider.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ea442ae902e68e033fa7dff13d700e7353c7c6f1"
+              },
+              {
+                "name": "spinner.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "dcf181f819f34372c852905ff6edd91769fa6752"
+              },
+              {
+                "name": "switch.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3a0ec3ca3627755abf4c4aefd3723b25c43c81e7"
+              },
+              {
+                "name": "table.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "2c78a8455e5508feccb512e6f94a3c73466ad0c5"
+              },
+              {
+                "name": "tabs.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "d20529e2ca6ac6b127209b9087505405283589ba"
+              },
+              {
+                "name": "textarea.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "1e06fadb8a3821d9284382dc0a5d464c36329a0c"
+              },
+              {
+                "name": "toast.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b09d97d45917c51413983dbf6031bb833f20b178"
+              },
+              {
+                "name": "toggle-group.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "877764554492020504d9176e49a0c663d22a02fc"
+              },
+              {
+                "name": "toggle.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "6c3657b8b82e0b1bd1ac57b26331d11d4cb8ad90"
+              },
+              {
+                "name": "tooltip.tsx",
+                "type": "file",
+                "mode": 33188,
+                "uid": "7f999be43cb3db66bb57f1dc4a088a27eed740b1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "cchr-candidates.server.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1089a7326994d2dc62da4824047280c9c3f76067"
+          }
+        ]
+      },
+      {
+        "name": "db",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "env.d.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1cb2bc607a6d0eb660e6349bcc1d039a9f6abcb8"
+          },
+          {
+            "name": "index.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "dd3e1a7ad2cae3ec7ba5886aea4d55750b71c517"
+          },
+          {
+            "name": "schema.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "22b9df3d84d35b65f40da16a18e7b81b9a269000"
+          }
+        ]
+      },
+      {
+        "name": "drizzle.config.ts",
+        "type": "file",
+        "mode": 33188,
+        "uid": "2a551a43d783803a195c4976f188754534583ee3"
+      },
+      {
+        "name": "drizzle",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "0000_dapper_fixer.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "20bde005879034f82b4b282265e54c20e42cee9e"
+          },
+          {
+            "name": "0001_eminent_the_professor.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "efdf3447f82805b7938ea245daa3ecf55a9f2942"
+          },
+          {
+            "name": "0002_right_mother_askani.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "04f9252f96931f494cb6ecbf0c600ea3db023d56"
+          },
+          {
+            "name": "0003_powerful_domino.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9ba25f62531119bc9507fefd1b8b4b48c9e4e566"
+          },
+          {
+            "name": "0004_suhyun_first_round.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "15c1f9252df25821e28f8cea2967e94e78163eb1"
+          },
+          {
+            "name": "0005_preserve_exam_answers.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c813fcda1719ee204c62d25a1ae3d4e9a392583a"
+          },
+          {
+            "name": "0006_ss_remote_test_clinic.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9b2ab2d930971667589a500b0547d8a6627e02dc"
+          },
+          {
+            "name": "0007_ss_setup_directory.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9f0986a621944e83c0d00df724a029e0c0567bf7"
+          },
+          {
+            "name": "0008_ss_pw_reference.sql",
+            "type": "file",
+            "mode": 33188,
+            "uid": "79c3fd6062f737a7d0bc7e6317241f8f669b0bcd"
+          },
+          {
+            "name": "meta",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "0000_snapshot.json",
+                "type": "file",
+                "mode": 33188,
+                "uid": "c8d6f5de960aad9f14060b75e2da43e9433da867"
+              },
+              {
+                "name": "0001_snapshot.json",
+                "type": "file",
+                "mode": 33188,
+                "uid": "1168eed90a20cb00053b788d6819acdcb4f30c25"
+              },
+              {
+                "name": "0002_snapshot.json",
+                "type": "file",
+                "mode": 33188,
+                "uid": "94530aa6fe1f0f9400812ab44aaae5077188a174"
+              },
+              {
+                "name": "0003_snapshot.json",
+                "type": "file",
+                "mode": 33188,
+                "uid": "65ee11c9bc41875ada6772421ce3a9d293e97c61"
+              },
+              {
+                "name": "_journal.json",
+                "type": "file",
+                "mode": 33188,
+                "uid": "661ed1e36af98864620a032cc33d52e3654b05c1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "env.d.ts",
+        "type": "file",
+        "mode": 33188,
+        "uid": "f2b84af0694ddd79c20e9734abcaba0fa6391d8d"
+      },
+      {
+        "name": "hooks",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "use-mobile.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "202bb2ea86fe276409a5f485440755cddc0a9347"
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "academy-content.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6993ccc501d16afd62b6989e26083ef908ddb435"
+          },
+          {
+            "name": "academy-model.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d73dd1768e24b753b35e82b58d6c55d200abfeb8"
+          },
+          {
+            "name": "academy-questions.server.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e01e9b0f1e1d064a51d12801bce5c27c67b2fff5"
+          },
+          {
+            "name": "academy-retention.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9dd12af801bc9a8e43e9e582e2fed40e9e47af18"
+          },
+          {
+            "name": "avatar-profile-html.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3526c6a335bc52d885322bc4e8e76ec71bb052df"
+          },
+          {
+            "name": "ba-clinics.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3eae9711580062823bd715723f7bd1b20f8bd34b"
+          },
+          {
+            "name": "ba-contract-template.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9b2af7792dd86b3f5f3ee8ffec90399f4f0b7a27"
+          },
+          {
+            "name": "ba-management.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c73c414bd559daf175fed6cb499019a9dda448b5"
+          },
+          {
+            "name": "ba-package.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c8a9c3b19c2dcffc3d1570a48024dd26e7a7e4dc"
+          },
+          {
+            "name": "ba-review-criteria.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b2460dd3810ee97ead879bf3e173f635111205cd"
+          },
+          {
+            "name": "badge-purchase-brief.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "fd76277da3b0ce1caa0017a48ff345bb9d7cd730"
+          },
+          {
+            "name": "bcall-reference.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "47f4eee98d6388d8dc08f1f89a12ce8c3ae52507"
+          },
+          {
+            "name": "brand-purchase.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "96f658a0823312255bcf1d1a99d0c0d5a5896995"
+          },
+          {
+            "name": "ca-branding-docs.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "25ed80b5fd04a25a77dfbacbfaf6d5d35335dbd0"
+          },
+          {
+            "name": "ca-operations.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "fd0cc920666054f9c814fefd01feb4742ff59581"
+          },
+          {
+            "name": "ccall.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5e785c282049f4b872778dba8698be6be1239cc1"
+          },
+          {
+            "name": "ccfm-backup.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a58451dbb898a4a971f202c5f72273e1df650816"
+          },
+          {
+            "name": "ccfm-store.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8307d0f8cec7131166320e90e127b88a443f09e9"
+          },
+          {
+            "name": "ccfm.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5967b23dc59ae77a463badab7a02bcbdf757bbdc"
+          },
+          {
+            "name": "clinic-billing.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f03cf8a13bdd14bdba37e9a9d6e1c376cc2e0f75"
+          },
+          {
+            "name": "collection-status.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2497b77b5a9615e5904ebd37501de232db135f9e"
+          },
+          {
+            "name": "company-organization-html.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "dca1e7e58c50503769a67f88edbaa161cc0681df"
+          },
+          {
+            "name": "cost-accounting.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1aba1bffb16a23b3413b92209f964c9e2e0b56e6"
+          },
+          {
+            "name": "direct-upload-client.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "30710c4cdf6ebd90183718bb8e1502b30238aaec"
+          },
+          {
+            "name": "direct-upload-server.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "832f213d7eb235fcd7cd136a68a58f0e2f3d88d3"
+          },
+          {
+            "name": "director-inbox.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4bbab88cae7d7471c6f6a0a0acfefce9561c9e64"
+          },
+          {
+            "name": "dm-manual-html.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b5bf567714710e54e82ca014f6f3304c1b9b52b0"
+          },
+          {
+            "name": "do-explorer.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e449071d28069429bd6cbae646874b0c16f2ca54"
+          },
+          {
+            "name": "do-work-map.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "db1fe20e821a1247058479f7bc2520f078450c4d"
+          },
+          {
+            "name": "dss-navigation.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "cdb911ed977f3da7ff8de2385ff8cfc953444819"
+          },
+          {
+            "name": "dss-strategy-store.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "24208023d2ee02c926439d399fbf298145206ca3"
+          },
+          {
+            "name": "dss-strategy.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "082b7a9ea935bd94d5d58b8d20c665a0c43c184d"
+          },
+          {
+            "name": "finance-assignees.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e036740ba525c239d889c22a028a180c7d6de272"
+          },
+          {
+            "name": "fm-control.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "30500647ff613c3d6bf43acf7dcb958f3f03e6f4"
+          },
+          {
+            "name": "fm-reconciliation.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bf3c99bdd71946594141018203e14c6bb3bae316"
+          },
+          {
+            "name": "fm-routine-catalog.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "321f242970214db403434c2f5cc101edd6d7e5c8"
+          },
+          {
+            "name": "fm-routines.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "81417cd4f09c997eb1ce85ecc6096022786ea3a5"
+          },
+          {
+            "name": "fm-scheduler.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a1b55932b17c1f32e919c27ba953ec93a4e3f47b"
+          },
+          {
+            "name": "hospital-access.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a4ba305d9d2cdbb8631e2dafe4151299ae335380"
+          },
+          {
+            "name": "hospital-onboarding.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bb67d2613afef72104629f1119f852fe330a4294"
+          },
+          {
+            "name": "hospital-reporting.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9a5d757870004e904a0a7f898d5b8fa644e31634"
+          },
+          {
+            "name": "hospital-rollout.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5b043e78ecc448149af9a81ac5796fff564e7bab"
+          },
+          {
+            "name": "hr-compliance.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a8a90a2e81b2dfdf3639f9ff2a5b2c41379f1e44"
+          },
+          {
+            "name": "hr-department.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6d8c7c8357b1f4bea4df4127cae3b886fc1c0696"
+          },
+          {
+            "name": "hr-model.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f73304cb45b9f4e822b7a09bce2a3063b53fc4b3"
+          },
+          {
+            "name": "hr-operation-model.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6ba29d61cd7c2a774231fa7590c4235936cbcba3"
+          },
+          {
+            "name": "hr-person-model.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1f4e25d3a34c71b560fdb80ebcbdf06360ef5b4b"
+          },
+          {
+            "name": "human-roster.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d85e7aaf6d1ef6c4a73e54010d5d4a7014fc265c"
+          },
+          {
+            "name": "local-auth.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b5ac0fdc9627b0e5f45b7f5130a7e4d948a5a0c0"
+          },
+          {
+            "name": "login-destination.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "807a1b67df79ac98b24052680046695707cae7d5"
+          },
+          {
+            "name": "manual-data.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c5a1c6b644f952ea024132be6d0c813cd3faabad"
+          },
+          {
+            "name": "mentor-roster.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "5928fed642dafabfe64cbdca858687e491b38845"
+          },
+          {
+            "name": "mentor.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "de5c8cb167dcd1d35da63da799ae51cbd4c6cbc2"
+          },
+          {
+            "name": "model.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d165fa0eb5676c55c5a66b8ffa60970d65052046"
+          },
+          {
+            "name": "op-control.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "901da1fae230d8196efb7e77a1bb2c6f824466b7"
+          },
+          {
+            "name": "org-management.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "72c0722b9f6b70df409c46025531e2d35239603e"
+          },
+          {
+            "name": "os-roles.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "177a40089ccf557b21998427e6a56465384a9c4b"
+          },
+          {
+            "name": "outreach-catalog.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c44173facb1a3e152f613541a494e90534b2cc40"
+          },
+          {
+            "name": "outreach-counts.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "28898e0bdb7e5ce049d30e307bd67fe0f4d2b6d1"
+          },
+          {
+            "name": "outreach.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d023aef4e8d45483ddf02ea162abeecab1be42e7"
+          },
+          {
+            "name": "planme-september18-order.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "182acae62f16449835e80f72cfd2bb74b9477c64"
+          },
+          {
+            "name": "policy.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a663c02e2efd4cdedf5f9497160ca254c5d11cf1"
+          },
+          {
+            "name": "recell-reservation-sync.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "42e93991e30e95c573a85f454d5ac4b05e0d0f2a"
+          },
+          {
+            "name": "remote-access.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c17de9917e0b5447956addc2d51668c12cba4064"
+          },
+          {
+            "name": "runtime.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "50fe6d642c90f9641e4cad2ca19e76af8305eb54"
+          },
+          {
+            "name": "seats.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bb6716a05c349b79ca7638edefb9425a986e9a2d"
+          },
+          {
+            "name": "seminar-summary.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "6b28886cffeaccd8f60f0472005931af3717ae78"
+          },
+          {
+            "name": "server.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "89031f8dd656bb0b7f6dd8d89408418e5c20ce1e"
+          },
+          {
+            "name": "service-intake.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "fdea4ce842a5d07a48ffe0e09e3482760e7aaccf"
+          },
+          {
+            "name": "service-operations.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a56bd634e08ffc05df6c8406fc39f381672aded5"
+          },
+          {
+            "name": "service-preparation.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0e34ab872709d611240bc4be634a78d67f2b9e42"
+          },
+          {
+            "name": "service-production.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1b7bc7ea0603ac3dbe3bd9fb2ac222943ab6c225"
+          },
+          {
+            "name": "service-review.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ac9b37037227f1ab9403a140617247507552e0dd"
+          },
+          {
+            "name": "service-transactions.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8571ccbb332ddcdcb8246618fe3e474d68de93db"
+          },
+          {
+            "name": "service-workflow.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "655d4572343bdd5c494b7ad39681f299045a3751"
+          },
+          {
+            "name": "settlement.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b792e3908683bb22db160eb3c250f29cbaf7499c"
+          },
+          {
+            "name": "setup-invitation.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "907f08ffaa1f711c82e1e852e72a06f69192ad0f"
+          },
+          {
+            "name": "setup-reference.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a89c645873d86ac8ca1f793cb136f814e3287170"
+          },
+          {
+            "name": "ss-care-guides.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "309a160cb4d1f5d83080bf0f4528f5cc9bf0bb65"
+          },
+          {
+            "name": "ss-content-catalog.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "385a91223ac875adbd8bada4b1148362a3b55efb"
+          },
+          {
+            "name": "ss-dispatch-retry.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "792da81d03cac0c745b29956ff4841224173b7d8"
+          },
+          {
+            "name": "ss-dispatch.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c03e19a7df305ed56df0172f68de610d6f4ce4c4"
+          },
+          {
+            "name": "ss-operations.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "87eef0b26b110d407bc5effc6c4654662a4f8d44"
+          },
+          {
+            "name": "ss-preparation-worker.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1bf084062137e42f92db3d41b9f164fddb13fb71"
+          },
+          {
+            "name": "ss-quality.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "917f2aae13f62a276065dc3e08cee31dee43ed26"
+          },
+          {
+            "name": "ss-review-criteria.json",
+            "type": "file",
+            "mode": 33188,
+            "uid": "608f6caf34185f3c2724e50d12273e41d9357175"
+          },
+          {
+            "name": "ss-send-window.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "47c8bad8cf4c12745b80dcd7323b7ff733be4111"
+          },
+          {
+            "name": "ss-service-policy.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "7a27c51061aadf86c1ca5ed8de0b68cd212354e6"
+          },
+          {
+            "name": "ss-week-state.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2c7f5488e9b5ca0d277ee4182449332352e7e453"
+          },
+          {
+            "name": "supabase-adapter.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "43c91fb67fa3db66b9861a074b2728721d5ccff5"
+          },
+          {
+            "name": "utils.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "c90970573af77a6d09641e5b319dff2f8075aafe"
+          },
+          {
+            "name": "work-orders.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4a66ca8e9a464e2790a653f482b70f7cb2d2f2d7"
+          }
+        ]
+      },
+      {
+        "name": "middleware.ts",
+        "type": "file",
+        "mode": 33188,
+        "uid": "bfe2a890751afdf9834408f7b37d82caceecd0f6"
+      },
+      {
+        "name": "next-env.d.ts",
+        "type": "file",
+        "mode": 33188,
+        "uid": "915946e261450f4fb6aab2ca862c8b440b748240"
+      },
+      {
+        "name": "next.config.ts",
+        "type": "file",
+        "mode": 33188,
+        "uid": "9daeabbf5ac2a1ed275997523ceb8c2a6e0e14b2"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "3bbafb0fbe141ab8dbae289e06ed1ac94ca98be3"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "8718269d0e27401358f0826dd07c8466cb0fc868"
+      },
+      {
+        "name": "postcss.config.mjs",
+        "type": "file",
+        "mode": 33188,
+        "uid": "18b51030fd12bdfa0c0cb5316ccf6abac97345b8"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "chartclean-logo.png",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8e4b0e0dac89a6c7e5267d6adc03ed146b9e5d33"
+          },
+          {
+            "name": "chartclean-works-wordmark.png",
+            "type": "file",
+            "mode": 33188,
+            "uid": "92264e9d1d4beda6cd2930d58ce516087236db95"
+          },
+          {
+            "name": "do-management-parthenon.svg",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4dab3c486130ed1b5fb9d853616c95f33b02a333"
+          },
+          {
+            "name": "downloads",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "chenggyo-setup.exe",
+                "type": "file",
+                "mode": 33188,
+                "uid": "e3fe02e2caec6db02e0a55e587037004ec1bb815"
+              }
+            ]
+          },
+          {
+            "name": "favicon.svg",
+            "type": "file",
+            "mode": 33188,
+            "uid": "81e071a890a710c2dd39b2cb0ff68af4401fc972"
+          },
+          {
+            "name": "hr-uniform",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "6-person-bright-belt-18mm-20261004.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "3c8d77ea6af3003643155166b9d4ca3d653cbab7"
+              },
+              {
+                "name": "6-person-ds-pocket-20261004.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ea5d54c1f782416f0365a82bd6fa09d2b446c9d4"
+              }
+            ]
+          },
+          {
+            "name": "uniform-six-person-light-belt-reference.png",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3c8d77ea6af3003643155166b9d4ca3d653cbab7"
+          },
+          {
+            "name": "management-map.html",
+            "type": "file",
+            "mode": 33188,
+            "uid": "a290def07e01891a3bda77371d900775900a29bd"
+          },
+          {
+            "name": "maps",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "leaflet.css",
+                "type": "file",
+                "mode": 33188,
+                "uid": "ec929f1100c6642ccc5c4272cf4cca12251a9a5d"
+              },
+              {
+                "name": "leaflet.js",
+                "type": "file",
+                "mode": 33188,
+                "uid": "5a640ff863e7902a8cac2ce6ba37c87b30677761"
+              }
+            ]
+          },
+          {
+            "name": "mentors",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "doyun.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "9eff76e77195757331b7bbbc2901e1e84535a937"
+              },
+              {
+                "name": "eunho.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "477611ce2f852e23271d22336fd9e501a51ebff3"
+              },
+              {
+                "name": "hyejin.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "b16b60b28159889c9c1e58db7d58dd4f5f6ce49a"
+              },
+              {
+                "name": "jian.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "681964c9471a7ba4774c14d079896b27d3a6a724"
+              },
+              {
+                "name": "junho.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "426e7cbd6b60da100797f62abf0bfbc3be46a033"
+              },
+              {
+                "name": "minjeong.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a66ac540ca5c487fc5b14403e581763ffd2a2626"
+              },
+              {
+                "name": "sangmin.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "a5045fc17d42812d346dddc1eb49668b18b4ed18"
+              },
+              {
+                "name": "seojin.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "baa816cf6384f67cf50a8d23a58a465242feed11"
+              },
+              {
+                "name": "seoyun.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "8a074f874679b0b190a0d439a517653b66594ecb"
+              },
+              {
+                "name": "sumin.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "14c15567142151f6f7dbe84e3ddc9eb64fa87268"
+              },
+              {
+                "name": "taeho.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "8136a798dd299162c54f7a48008b052d979f1adb"
+              },
+              {
+                "name": "yuna.png",
+                "type": "file",
+                "mode": 33188,
+                "uid": "d51f65c467d7064133690c61bf9f756dbf26979f"
+              }
+            ]
+          },
+          {
+            "name": "people",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "sangmin",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "autumn.png",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "c01392a58860e7ca97b7f84f26e27409536c16dc"
+                  },
+                  {
+                    "name": "bicycle.png",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "39c8a1f1c6bbf0b1f60412c4c93a4dbbdf1fb583"
+                  },
+                  {
+                    "name": "spring.png",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "6f4ab02a5a2c65d019f376f36e560fd9dfbefe7f"
+                  },
+                  {
+                    "name": "summer.png",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "a536ce3aa3964a18689d65026e5a0e8f8906dbc2"
+                  },
+                  {
+                    "name": "winter.png",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "bc6971aa9b7eeaced091635ff480c422663a9096"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setup.html",
+            "type": "file",
+            "mode": 33188,
+            "uid": "521754619c1ee9629ed23897d94850f8189aa5c8"
+          },
+          {
+            "name": "start.html",
+            "type": "file",
+            "mode": 33188,
+            "uid": "9b56ac2393261ec6d2fba42382001684229b2727"
+          },
+          {
+            "name": "uniform-belt-medium-brown.png",
+            "type": "file",
+            "mode": 33188,
+            "uid": "064d7d86d3209dc54cbbbd54a78827d70a172ea6"
+          },
+          {
+            "name": "windows_startup.ps1",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0e2d8457346f3bf593514ee8eabfbd4ac205f0f3"
+          }
+        ]
+      },
+      {
+        "name": "server-tools",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "windows_startup.ps1",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0e2d8457346f3bf593514ee8eabfbd4ac205f0f3"
+          },
+          {
+            "name": "mac_bridge.py",
+            "type": "file",
+            "mode": 33188,
+            "uid": "cdb8e62baf4968a04027e61445808cb63eb6dbe0"
+          },
+          {
+            "name": "remote-helper",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "Program.cs",
+                "type": "file",
+                "mode": 33188,
+                "uid": "27e761cc71012918b206f520a49e95df20536a60"
+              },
+              {
+                "name": "README.md",
+                "type": "file",
+                "mode": 33188,
+                "uid": "e7e6e6f49f3139f896af7dc4d795ccf4c4c8922a"
+              },
+              {
+                "name": "app.manifest",
+                "type": "file",
+                "mode": 33188,
+                "uid": "dc1ba19f8ee152b3a7a3014b535e8543e27b8a9e"
+              }
+            ]
+          },
+          {
+            "name": "\uc6b4\uc601\uc5f0\uacb0_\uc801\uc6a9\ubc94\uc704.md",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b35618289074b83fbc03ab6b111a7a6dfc29f93f"
+          }
+        ]
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "fixtures",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "billing",
+                "type": "directory",
+                "mode": 16749,
+                "children": [
+                  {
+                    "name": "adapter.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "995203fe19d27168027149892dd83741c0d32fa1"
+                  },
+                  {
+                    "name": "test.ts",
+                    "type": "file",
+                    "mode": 33188,
+                    "uid": "4a20874d66819e8b09f23d5d68bc7298d0a5a16d"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "s1-manifest.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8573a38a4adc18489dc1696dcf0190fd812b84cf"
+          },
+          {
+            "name": "test-academy.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "faa18a985347ba83c26ede492b924fbc98da7178"
+          },
+          {
+            "name": "test-ba-package.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "4397cbef6ea813ac6c262768cb7cc352f899e85a"
+          },
+          {
+            "name": "test-bcall-a.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "69ad5e87a4989441392108ce3493513c392cbd3c"
+          },
+          {
+            "name": "test-ccall-filters.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "21997678e78993d10ca538b6b8e8c673c170f835"
+          },
+          {
+            "name": "test-ccall-planned.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8004e35bb6f8bc12b399f1e820afee93c340fdce"
+          },
+          {
+            "name": "test-ccall.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e48eda1296e1d82878c615acff8767211116f5cf"
+          },
+          {
+            "name": "test-ccfm.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "67ec64be188fc03b0b69b4deabea0a0c57bc01d9"
+          },
+          {
+            "name": "test-ccw-integration.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "adda83bbec0d3ba8f785bfcd892d51271c5ee3aa"
+          },
+          {
+            "name": "test-clinic-billing.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8b450e27300ffb1767c43e743fe2d4fae0c2ad72"
+          },
+          {
+            "name": "test-credential-change.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ffb58cba694a70947c8d0e701030a9e542fa86da"
+          },
+          {
+            "name": "test-director-inbox.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "10822c1a2c19abebabef55a2d301232c7e32968a"
+          },
+          {
+            "name": "test-dm-bcall-link.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "fd3d55aa7dfac440e3af8e9d5aee57af3b32bec0"
+          },
+          {
+            "name": "test-dss-navigation.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1410ae75bb08d927b08ce506af84aa14cedca506"
+          },
+          {
+            "name": "test-dss-operations.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "01a561f8b2c627b85d6a96f2c6d2e71e3fc13285"
+          },
+          {
+            "name": "test-dss-strategy.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "afecc1275e0f3dafd7faa55326bcaf166fce7025"
+          },
+          {
+            "name": "test-employee-access.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "362653d10f9ee7ce76d37a8ee01bbed73322f9b5"
+          },
+          {
+            "name": "test-fm-control-store.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "60506c9f612f917c89d23e75eca9c249ba1ce076"
+          },
+          {
+            "name": "test-fm-control.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "37c4f7f5b8b9cba3ece39d84a5903421e522f517"
+          },
+          {
+            "name": "test-fm-routines.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "3981d24c0cf84b93d487fc267f78d1b10b10b50d"
+          },
+          {
+            "name": "test-fm-scheduler.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bb658decdf059d819849694ebd0c287c04c8ccf0"
+          },
+          {
+            "name": "test-hospital-access.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "dbc808ce3a843231fcf706750651d027a443bf1b"
+          },
+          {
+            "name": "test-login-destination.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "de78b33149b697a05b9c908174dfa9ed215450c3"
+          },
+          {
+            "name": "test-management-frame-nav.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "25c4a2f80ddccfc1d701c57123bb025e67fac431"
+          },
+          {
+            "name": "test-op-10min.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d221daf57d9ca096aa5cdaa35c7cfca544ec3521"
+          },
+          {
+            "name": "test-op-control.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "bfd2ddf14966b5bcd95d21ea29c6273d4276e6b0"
+          },
+          {
+            "name": "test-organization-nav.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8fc5e68b22225df66cadefc55b4a7144af250d32"
+          },
+          {
+            "name": "test-os-building-hierarchy.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "380c526a89ddb62cb6a4ebc29c930506fbfd2916"
+          },
+          {
+            "name": "test-os-control.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d55ef7ba6df112b8ed6fbec70ab7c640a1dcd014"
+          },
+          {
+            "name": "test-os-roles.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "2a04250838fb56ff34063347433e401abd8964bd"
+          },
+          {
+            "name": "test-outreach-api.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f0415be0fe50338b148e58c767d50c4ad61e3a73"
+          },
+          {
+            "name": "test-outreach-lifecycle.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "e83b613cb336b18f01c205d5629e5027fff606bb"
+          },
+          {
+            "name": "test-outreach-permissions.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d76bedb6be4158155d5063bd628927f17284a03f"
+          },
+          {
+            "name": "test-public-exam.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "d373e676e083033c49d253d34efa2b4041bfeb8e"
+          },
+          {
+            "name": "test-service-preparation.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "88b6cc300a6a1af3575fb90fe5147e9fc6665954"
+          },
+          {
+            "name": "test-ss-approval.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1d888692664b09f512c2a31056d036b787d3105d"
+          },
+          {
+            "name": "test-ss-expiry.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "b456cc32470f481fb7d7c9c419536094822b3f41"
+          },
+          {
+            "name": "test-ss-operations.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "71ae6fe11e3033a6c3bf2451d50c13fdb9ac4b50"
+          },
+          {
+            "name": "test-ss-preparation-amend.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "83097c7c65a50a85d64315c03bc85c8c66d7ccbb"
+          },
+          {
+            "name": "test-ss-preparation-worker.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "52a5fbdf637975ca0015dc1f38b78761695ccfdd"
+          },
+          {
+            "name": "test-ss-quality.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f6de63afab3f3bf74be4b139750748b913c1d388"
+          },
+          {
+            "name": "test-ss-reconcile.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "ea351d620e2a6d91246974b05322c7962d4260c9"
+          },
+          {
+            "name": "test-ss-review-auth.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "229d8502e2e827aaa86287ddcabeebf798337fdb"
+          },
+          {
+            "name": "test-supabase-adapter.ts",
+            "type": "file",
+            "mode": 33188,
+            "uid": "debd7ac85861be458797d7887a733280b9a67102"
+          },
+          {
+            "name": "test-work-orders.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8e7e28bf09f30d196f751a6b8c11faea6451a256"
+          },
+          {
+            "name": "test-works-round2-ui.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "f7e861a4e7fd7e3ae697a46ab494724b2d148324"
+          },
+          {
+            "name": "test-works-round2.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "28203cb3799894e4906b0413216c506ddeac1847"
+          },
+          {
+            "name": "test-workspace-refresh.cjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "8c50c196e22f679f6bf136a1f5a74efbe3755cc7"
+          }
+        ]
+      },
+      {
+        "name": "supabase",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "migrations",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "20261008_chartclean.sql",
+                "type": "file",
+                "mode": 33188,
+                "uid": "25ee0bf1bbe934fc1e6e282930f066b78754439a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "brand-purchase.test.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0c940bcfc3f4d89dd4ac33f079f609b2df731fcd"
+          },
+          {
+            "name": "seminar-summary.test.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "1916e54c6328478a7f6aa785fdd489c49ddf1fa7"
+          },
+          {
+            "name": "ss-dispatch-review-reason.test.mjs",
+            "type": "file",
+            "mode": 33188,
+            "uid": "0a62afbf711d687f610ef2899b12369492838c72"
+          }
+        ]
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "71837cece39fc600347e6a84ff6a3b9968a7d8b8"
+      },
+      {
+        "name": "vercel.json",
+        "type": "file",
+        "mode": 33188,
+        "uid": "2a33238c1f073281718f0fa818fde1e6766cea1a"
+      }
+    ]
+  },
+  {
+    "name": "out",
+    "type": "directory",
+    "mode": 16749,
+    "children": [
+      {
+        "name": "_middleware",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-62f51f26ca7f65a755321ae788fe58d802"
+      },
+      {
+        "name": "index",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "_not-found",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "_not-found.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "ai-mentor",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "ai-mentor.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "dss-review",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "dss-review.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "employee",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "employee.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "exam",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "exam.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "hr",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "hr.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "index.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "login",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "login.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "my",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "my.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "orders",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "orders.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "password",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "password.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "remote-access",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "remote-access.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "_global-error",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "_global-error.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+      },
+      {
+        "name": "_global-error.segments",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "__PAGE__.segment.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+          },
+          {
+            "name": "_full.segment.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+          },
+          {
+            "name": "_tree.segment.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-44852891dd54ee7f267fe025bdf36d6d1a"
+          }
+        ]
+      },
+      {
+        "name": "api",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "academy",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "academy.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "auth",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "auth.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ba",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ba-packages",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ba-packages.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ba.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "bcall-reference",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "bcall-reference.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "brand-purchase-brief",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "brand-purchase-brief.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "bridge",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "bridge.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ca-branding-docs",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ca-branding-docs.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall-recording",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall-recording.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall-sent",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall-sent.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccall.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccfm",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ccfm.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "clinic-billing",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "clinic-billing.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "control",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "control.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "do-work-map",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "do-work-map.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "dss-review",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "dss-review.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "dss-strategy",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "dss-strategy.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "erp",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "erp.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "file-transfer",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "file-transfer.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "files",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "files.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "fm-routines",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "fm-routines.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hospital-access",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hospital-access.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hospital-access",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "redeem",
+                "type": "lambda",
+                "mode": 49590,
+                "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+              },
+              {
+                "name": "redeem.rsc",
+                "type": "lambda",
+                "mode": 49590,
+                "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+              }
+            ]
+          },
+          {
+            "name": "hr",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-evidence",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-evidence.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-operations",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-operations.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-people",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr-people.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "hr.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "management-board",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "management-board.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "management-map",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "management-map.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "management-map",
+            "type": "directory",
+            "mode": 16749,
+            "children": [
+              {
+                "name": "commands",
+                "type": "lambda",
+                "mode": 49590,
+                "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+              },
+              {
+                "name": "commands.rsc",
+                "type": "lambda",
+                "mode": 49590,
+                "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+              }
+            ]
+          },
+          {
+            "name": "manual",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "manual.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "mentor",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "mentor.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "org",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "org.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "outreach",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "outreach.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "portrait",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "portrait.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "public-exam",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "public-exam.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "recell-reservations",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "recell-reservations.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "remote-access",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "remote-access.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "seats",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "seats.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "service-settlement",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "service-settlement.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "setup-hospitals",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "setup-hospitals.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "setup-journey",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "setup-journey.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-activity",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-activity.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-approval",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-approval.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-content-catalog",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-content-catalog.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-dispatch",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-dispatch.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-finance",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-finance.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-health",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-health.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-inventory",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-inventory.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-operations",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-operations.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-preview",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-preview.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-production",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-production.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-runner",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-runner.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-service",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-service.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-today",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-today.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-week",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "ss-week.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "work-orders",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "work-orders.rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          }
+        ]
+      },
+      {
+        "name": "avatar-profile",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "avatar-profile.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "ba-document",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "ba-document.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "care-guides",
+        "type": "directory",
+        "mode": 16749,
+        "children": [
+          {
+            "name": "[id]",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          },
+          {
+            "name": "[id].rsc",
+            "type": "lambda",
+            "mode": 49590,
+            "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+          }
+        ]
+      },
+      {
+        "name": "company-organization",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "company-organization.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "dm-manual",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "dm-manual.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "home",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "home.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "sales-worksheet",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      },
+      {
+        "name": "sales-worksheet.rsc",
+        "type": "lambda",
+        "mode": 49590,
+        "uid": "team_pTOL29npeEfpM3RAmfckqItC-1f0e431b34ac82c8933f4bdd642a9f02b5"
+      }
+    ]
+  }
+]

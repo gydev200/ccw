@@ -1,0 +1,25 @@
+{
+  "deploymentId": "dpl_23wbXsszyP4SnaayMAMfpufGyj78",
+  "readyState": "READY",
+  "build": "production build and TypeScript passed",
+  "staffMenu": "daily plan; separate work log; approval full sidebar; leave/account requests and status; HR inline; account settings restyled",
+  "hospitalSetup": "create, basic info, administration, screen/services, diagnosis/fee upload, exact material comparison and review, final preview",
+  "tests": "hospital registration permissions/duplicates, real XLSX/CSV fixture parsing, matching and unmatched rows, profile review gates passed",
+  "productionData": "No real hospital or medical files added during testing",
+  "matching": "exact code/name candidates only, human review required; current common catalog rehabilitation only",
+  "deploymentUrl": "https://chartclean-klcn9ghgv-happyshs747-3030s-projects.vercel.app",
+  "latestChanges": {
+    "hospitalInformation": "contract, payment/receivable notes, EMR environment and protected remote credentials; setup forms removed",
+    "design": "account service directory + login aside; six setup stage icons and single stage footer, no duplicate subnavigation",
+    "approvalNavigation": {
+      "beforeMs": 2187,
+      "afterMs": 177,
+      "measurement": "one Chrome same-role draft switch sample including tool click/wait overhead",
+      "sameIframe": true,
+      "staticAssetsCacheSeconds": 300,
+      "apiCache": "no-store",
+      "originSourceGuardTest": "PASS"
+    },
+    "productionDataWritesDuringVerification": false
+  }
+}

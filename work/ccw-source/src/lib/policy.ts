@@ -1,0 +1,7 @@
+import type { Member,Org } from './model';
+export function mayOrg(m:Member,org:string){return m.active===1&&(m.role==='DO'||(org!=='DO'&&(!m.access||m.access.orgs.includes(org))&&(org!=='DSS'||(['kyunghwa','kimkiyoung'].includes(m.person)&&m.dss===1))));}
+export function mayRecord(m:Member,r:{org:string;assignee:string;kind?:string;data?:any}){let data=r.data;try{if(typeof data==='string')data=JSON.parse(data)}catch{return false}return (m.role==='DO'||r.org!=='DSS'||(r.kind==='work_order'&&data?.category==='hr_support'))&&mayOrg(m,r.org)&&(m.role==='DO'||r.assignee===m.person||(r.kind==='task'&&!data?.mentor&&data?.coordinator===m.person));}
+export function mayAssign(org:string,person:string){return org==='DO'?person==='do':org==='DSS'?['do','kyunghwa','kimkiyoung','ai'].includes(person):['do','kyunghwa','parttime','parttime_am','parttime_pm','human-035f1152-71dc-42bc-972b-5f6ffbe3bf77','human-6d5d7680-9693-4df0-8aca-4389892bbe14','ai','vendor'].includes(person);}
+export function validUrl(value:string){if(!value)return true;try{const u=new URL(value);return u.protocol==='https:'||u.protocol==='http:';}catch{return false}}
+export function assertText(value:unknown,label:string,max=20000,required=false){if(typeof value!=='string'||value.length>max||(required&&!value.trim()))throw new Error(`${label}을 확인해 주세요.`);return value.trim();}
+export function assertOrg(org:unknown):Org{if(!['DO','DSS','PM','DM','OS','SS','CA'].includes(String(org)))throw new Error('조직을 확인해 주세요.');return org as Org;}
