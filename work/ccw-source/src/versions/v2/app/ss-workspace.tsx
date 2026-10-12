@@ -8,6 +8,7 @@ import HospitalBrief from './hospital-brief';
 import SSServiceLive from './ss-service-live';
 import ServiceReviewPanel from './service-review-panel';
 import SSRemoteAccess from './ss-remote-access';
+import RemoteManagement from './remote-management';
 import SSSetupJourney from './ss-setup-journey';
 import HospitalSetupPortal from './hospital-setup-portal';
 import {Button} from '@/versions/v2/components/ui/button';
@@ -23,10 +24,15 @@ const REPORTED=[
 const fields=[['emrStatus','EMR 수령·연동 현황'],['tone','문구 톤앤매너'],['frequency','안내 횟수·발송 시점'],['intensity','프로그램 강도·적용 기준'],['dailyGoal','하루 목표 인원'],['nextAction','다음 행동'],['sourceUrl','환자 시연·업무 링크']] as const;
 export default function SSWorkspace({section,state,onNewTask,onTask,onSave,onReload,focus,onNavigate}:any){
  const [mode,setMode]=useState(focus?.mode||'BA'),[search,setSearch]=useState(''),[chosen,setChosen]=useState(focus?.clinic||''),[draft,setDraft]=useState<any>(null),[busy,setBusy]=useState(false),[error,setError]=useState(''),[reviewDirty,setReviewDirty]=useState(false);
+ const [remoteClinic,setRemoteClinic]=useState('');
  const [productionFocus,setProductionFocus]=useState(false);
  const owner=state.member.role==='DO';const records=state.records.filter((r:any)=>r.kind==='customer');
  const known=REPORTED.map(p=>{const record=records.find((r:any)=>p.aliases.some(a=>r.data.name.includes(a)));return {key:record?String(record.id):p.name,record,data:{...p,org:'SS',assignee:'do',stage:'계약·계약금 수령',service:'',serviceStatus:'확인 필요',tone:'',frequency:'',intensity:'',notes:'2026-09-14 대표님 전달 현황',...record?.data}}}).filter(p=>owner||p.record);
  const hospitals=[...known,...records.filter((r:any)=>!known.some(p=>p.record?.id===r.id)).map((record:any)=>({key:String(record.id),record,data:record.data}))];
+ if(section==='원격 접속'){
+  const available=hospitals.filter((h:any)=>h.record?.id).sort((a:any,b:any)=>String(a.data.name||'').localeCompare(String(b.data.name||''),'ko'));
+  return <RemoteManagement hospitals={available.map((h:any)=>({id:Number(h.record.id),name:h.data.name||h.data.alias||''}))}/>;
+ }
  const contracted=(p:any)=>p.data.name==='테스트 병원'?section==='세팅':known.some(k=>k.key===p.key)||(!/계약 전|미계약|계약 예정/.test(p.data.stage||'')&&/계약|운영/.test(p.data.stage||''));
  const visibleHospitals=hospitals.filter(p=>section==='세팅'&&mode==='BA'?!contracted(p):contracted(p));
  const shown=visibleHospitals.filter(p=>p.data.name.includes(search));const selected=shown.find(p=>p.key===chosen)||shown[0];
