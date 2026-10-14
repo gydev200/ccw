@@ -9,6 +9,7 @@ export const env={
   get MAC_SERVER_TOKEN(){return process.env.MAC_SERVER_TOKEN;},
   get SS_DISPATCH_TOKEN(){return process.env.SS_DISPATCH_TOKEN;},
   get SS_REVIEW_KEY(){return process.env.SS_REVIEW_KEY;},
+  get CRON_SECRET(){return process.env.CRON_SECRET;},
   get PW_REFERENCE_KEY(){return process.env.PW_REFERENCE_KEY;},
   get CCW_BOOTSTRAP_SECRET_HASH(){return process.env.CCW_BOOTSTRAP_SECRET_HASH;}
 };
