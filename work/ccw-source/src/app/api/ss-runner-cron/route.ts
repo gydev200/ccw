@@ -18,7 +18,7 @@ export async function GET(req:Request){
  if(!safeEqual(req.headers.get('authorization')||'',`Bearer ${secret}`)){console.warn('[ss-runner-cron] unauthorized');return json({error:'인증 실패'},401);}
  const store=db(),now=new Date().toISOString(),heartbeat={at:now,version:'ss-runner-cron-v1',host:'vercel-cron',actualSendEnabled:false};
  await store.prepare('INSERT INTO settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').bind('ss-runner:heartbeat',JSON.stringify(heartbeat)).run();
- const pending=await store.prepare("SELECT key,value FROM settings WHERE key LIKE 'ss-job:%' AND key NOT LIKE '%:history:%' AND json_extract(value,'$.status')='queued' AND json_extract(value,'$.hospital') IN ('floce','planme') AND json_extract(value,'$.service')=5 ORDER BY key DESC LIMIT 25").all<any>();
+ const pending=await store.prepare("SELECT key,value FROM settings WHERE key LIKE 'ss-job:%' AND key NOT LIKE '%:history:%' AND json_extract(value,'$.status')='queued' AND json_extract(value,'$.hospital') IN ('floce','planme') AND json_extract(value,'$.service')='5' ORDER BY key DESC LIMIT 25").all<any>();
  let claimed=0,held=0,skipped=0;
  for(const item of pending.results){
   let job:any;try{job=JSON.parse(item.value)}catch{skipped++;continue}
