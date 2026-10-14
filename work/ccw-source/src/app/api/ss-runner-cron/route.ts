@@ -14,8 +14,8 @@ const safeEqual=(a:string,b:string)=>{
 
 export async function GET(req:Request){
  const secret=env.CRON_SECRET;
- if(!secret)return json({error:'Vercel CRON_SECRET 설정이 필요합니다.'},503);
- if(!safeEqual(req.headers.get('authorization')||'',`Bearer ${secret}`))return json({error:'인증 실패'},401);
+ if(!secret){console.error('[ss-runner-cron] missing_secret');return json({error:'Vercel CRON_SECRET 설정이 필요합니다.'},503);}
+ if(!safeEqual(req.headers.get('authorization')||'',`Bearer ${secret}`)){console.warn('[ss-runner-cron] unauthorized');return json({error:'인증 실패'},401);}
  const store=db(),now=new Date().toISOString(),heartbeat={at:now,version:'ss-runner-cron-v1',host:'vercel-cron',actualSendEnabled:false};
  await store.prepare('INSERT INTO settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').bind('ss-runner:heartbeat',JSON.stringify(heartbeat)).run();
  const pending=await store.prepare("SELECT key,value FROM settings WHERE key LIKE 'ss-job:%' AND key NOT LIKE '%:history:%' ORDER BY key LIMIT 25").all<any>();
@@ -58,5 +58,6 @@ export async function GET(req:Request){
    await store.prepare('UPDATE settings SET value=? WHERE key=? AND value=?').bind(JSON.stringify(failed),item.key,JSON.stringify(running)).run();held++;
   }
  }
+ console.info('[ss-runner-cron] completed',{claimed,held,skipped,actualSendEnabled:false});
  return json({ok:true,heartbeat:now,claimed,held,skipped,actualSendEnabled:false});
 }
