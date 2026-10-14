@@ -318,3 +318,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sa
 .os-branch-menu button {display:flex;gap:8px;align-items:baseline;min-height:42px}
 .os-branch-menu button strong {font-size:15px}
 .os-branch-menu button span {font-size:13px}
+
+/* Hospital setup portal spans the workspace shell. */
+.workspace:has([data-hospital-portal]) { max-width:none; width:100%; margin:0; padding:32px 32px 64px; background:#f6f7f9; }
+
+@media(max-width:760px){.workspace:has([data-hospital-portal]){padding:20px 14px 60px}}

@@ -1,0 +1,26 @@
+type Row=Record<string,any>;
+const norm=(s:any)=>String(s??'').normalize('NFKC').replace(/[\s\-_()（）]/g,'').toLowerCase();
+const val=(r:Row, names:string[])=>{for(const n of names){const key=Object.keys(r).find(k=>norm(k)===norm(n));if(key&&r[key]!==''&&r[key]!=null)return r[key]}return '';};
+const date=(x:any)=>{if(typeof x==='number'&&x>20000&&x<80000){const d=new Date(Date.UTC(1899,11,30)+x*86400000);return isNaN(+d)?null:d}if(x instanceof Date)return isNaN(+x)?null:x;const s=String(x??'').trim();if(!s)return null;const m=s.match(/^(\d{4})[./-]\s*(\d{1,2})[./-]\s*(\d{1,2})/);if(m){const d=new Date(+m[1],+m[2]-1,+m[3]);return d.getFullYear()===+m[1]&&d.getMonth()===+m[2]-1&&d.getDate()===+m[3]?d:null;}return null};
+const yes=(x:any)=>/^(1|y|yes|true|예|미동의|거부|불가|수신거부)$/i.test(String(x??'').trim());
+const allowed=(x:any)=>/^(1|y|yes|true|예|동의|허용|수신동의|수신|가능)$/i.test(String(x??'').trim());
+const adult=(r:Row,asOf:Date)=>{const age=Number.parseInt(String(val(r,['나이','연령'])).replace(/[^0-9]/g,''),10);if(Number.isFinite(age)&&age>0)return age>=19;let b=date(val(r,['생년월일','생년월일자']));if(!b){const raw=String(val(r,['주민등록 번호','주민번호','주민등록번호'])).replace(/\D/g,'');if(raw.length>=7){const yy=Number(raw.slice(0,2)),mm=Number(raw.slice(2,4)),dd=Number(raw.slice(4,6)),g=Number(raw[6]),century=[1,2,5,6].includes(g)?1900:2000;const d=new Date(century+yy,mm-1,dd);if(d.getFullYear()===century+yy&&d.getMonth()===mm-1&&d.getDate()===dd)b=d;}}if(!b)return false;let years=asOf.getFullYear()-b.getFullYear();if(new Date(asOf.getFullYear(),b.getMonth(),b.getDate())>asOf)years--;return years>=19};
+export function filterEmr(rows:Row[],hospital:string,asOf=new Date()){
+ const plan=hospital==='planme', min=new Date(asOf.getFullYear(),asOf.getMonth()-18,asOf.getDate()),max=new Date(asOf.getFullYear(),asOf.getMonth()-6,asOf.getDate());
+ const phoneCounts=new Map<string,number>();for(const r of rows){const p=String(val(r,['휴대폰 번호','휴대폰번호','휴대전화','휴대전화1','핸드폰번호','연락처'])).replace(/\D/g,'').replace(/^(\d{9,10})$/,m=>m.startsWith('0')?m:'0'+m);if(p)phoneCounts.set(p,(phoneCounts.get(p)||0)+1)}const candidates:any[]=[],counts:Record<string,number>={};
+ for(const r of rows){const name=String(val(r,['고객명','고객이름','환자명','성명','이름'])).trim(),phone=String(val(r,['휴대폰 번호','휴대폰번호','휴대전화','휴대전화1','핸드폰번호','연락처'])).replace(/\D/g,'').replace(/^(\d{9,10})$/,m=>m.startsWith('0')?m:'0'+m);const last=date(val(r,['최종 방문일','최종방문일','마지막 내원일','고객최근내원일','마지막거래일','일정날짜','결제일자','진료일','진료일자','방문일']));const memo=String(val(r,['메모','주의사항','고객메모','고객메모내용','메모내용','특이사항','상단메모']));const diagnosis=String(val(r,['상병명','진단명','상병코드','진단코드','질병명','질병코드']));const procedure=String(val(r,['시술명','시술','처방명','사용처방명칭','오더명','아이템명','결제항목','항목명']));const procDate=date(val(r,['시술일','시술일자','완료일','진료일','진료일자','일정날짜','결제일자','방문일']));const reasons:string[]=[];
+  if(!name)reasons.push('이름 확인 필요');if(!last||last<min||last>max)reasons.push('마지막 내원 6~18개월 조건 불일치/날짜 확인 필요');
+  if(!/^01[016789]\d{7,8}$/.test(phone))reasons.push('국내 휴대전화 확인 필요');if(!adult(r,asOf))reasons.push('성인 여부 확인 필요');
+  const refused=yes(val(r,['광고성 문자 수신 미동의','문자수신미동의','수신거부','광고수신거부']))||(['SMS수신여부','광고수신여부'].some(k=>Object.keys(r).some(x=>norm(x)===norm(k))&&!allowed(val(r,[k]))));if(refused||r.__explicitRefusal)reasons.push('수신거부 또는 광고문자 미동의');const consentKnown=['광고성 문자 수신 미동의','문자수신미동의','수신거부','광고수신거부','SMS수신여부','광고수신여부'].some(k=>Object.keys(r).some(x=>norm(x)===norm(k))&&String(val(r,[k])??'').trim()!=='');if(!consentKnown)reasons.push('문자 수신동의 상태 확인 필요');if(r.__priorOutreach)reasons.push('기존 발송·제작 자료에 포함되어 중복 확인 필요');
+  if(memo.includes('*')||/수신거부|연락금지|연락하지|불만|민원|주의/i.test(memo))reasons.push('주의 메모 또는 수신거부 확인');
+  if(plan){if(!procedure)reasons.push('결제 시술명 확인 필요');if(!last||!procDate||last.toDateString()!==procDate.toDateString())reasons.push('실제 시술일과 마지막 내원일 대조 필요');}
+  else if(!diagnosis&&!procedure)reasons.push('상병 또는 실제 시술 근거 확인 필요');else if(last&&!procDate&&procedure)reasons.push('마지막 내원일 시술 근거 대조 필요');else if(last&&procDate&&last.toDateString()!==procDate.toDateString())reasons.push('마지막 내원일과 근거 날짜 불일치');
+  const dup=phone&&(phoneCounts.get(phone)||0)>1;if(dup)reasons.push('중복 전화번호');
+  // EMR exports alone cannot prove prior enrollment, sends, exclusion history, or current opt-out status.
+  reasons.push('기존 등록·발송·제외 이력 대조 필요','현재 수신거부 상태 확인 필요');
+  if(!name&&!phone)continue;const eligible=reasons.length===2&&!dup;
+  if(eligible)candidates.push({name,phone,lastVisit:last?.toISOString().slice(0,10)||'',procedure:procedure||diagnosis,price:Number(val(r,['단가','금액','결제금액']))||0,visitCount:r.__visitCount||0,reason:plan?'결제 시술명 및 날짜 조건 충족':'상병/시술 근거 및 날짜 조건 충족',draftMessage:`안녕하세요, ${name}님. 지난 진료 이후 궁금하신 점이나 상담이 필요하신 부분이 있으신지 여쭙습니다. 필요하시면 병원으로 편하게 문의해 주세요. (광고성 정보 수신 동의 대상에 한해 발송)`});
+  else for(const reason of new Set(reasons))counts[reason]=(counts[reason]||0)+1;
+ }
+ if(plan)candidates.sort((a,b)=>b.price-a.price||a.lastVisit.localeCompare(b.lastVisit)||b.visitCount-a.visitCount);else candidates.sort((a,b)=>Number(/질.?타이트닝|보톡스|제모|엑소좀|리프팅|슈링크/i.test(b.procedure))-Number(/질.?타이트닝|보톡스|제모|엑소좀|리프팅|슈링크/i.test(a.procedure))||a.lastVisit.localeCompare(b.lastVisit));return {total:rows.length,prequalified:candidates.length,held:rows.length-candidates.length,counts,candidates:candidates.slice(0,30),status:'기존 발송·제외 이력과 현재 수신거부 명단 대조 전 · 발송 대상 확정 아님'};
+}
